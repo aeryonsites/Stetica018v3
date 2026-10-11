@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>STETICA 018 | Estética Automotiva</title>
+<meta name="description" content="Lavagem detalhada e higienização para carros e motos. Escolha o serviço, o horário e envie o agendamento para a equipe.">
+<link rel="canonical" href="https://stetica018.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STETICA 018">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="STETICA 018 | Estética Automotiva">
+<meta property="og:description" content="Lavagem detalhada de carro e moto. Escolha o serviço e o horário e agende pelo site.">
+<meta property="og:url" content="https://stetica018.vercel.app/">
+<meta property="og:image" content="https://stetica018.vercel.app/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo STETICA 018, lavagem de carro e moto">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="STETICA 018 | Estética Automotiva">
+<meta name="twitter:description" content="Lavagem detalhada de carro e moto. Agende pelo site.">
+<meta name="twitter:image" content="https://stetica018.vercel.app/og-image.jpg">
+<meta name="theme-color" content="#05070B">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05070B;--bg2:#0B1019;--bl:#087BFF;--cy:#00D9FF;--tx:#F5F8FF;--mt:#929EAF;--ln:#1A2536}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-padding-top:90px;-webkit-text-size-adjust:100%;overflow-anchor:none}
+html{scroll-padding-bottom:88px}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden;padding-bottom:72px}
+
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+h1,h2,h3{font-family:Manrope,Inter,sans-serif;line-height:1.05;letter-spacing:-.02em}
+h1{font-size:clamp(2.6rem,8.5vw,5.4rem);font-weight:800;margin:16px 0 18px}
+h2{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:800;margin:12px 0 14px}
+h3{font-weight:800;font-size:1.3rem}
+em{font-style:normal;color:var(--bl)}
+.w{width:min(1200px,calc(100% - 40px));margin-inline:auto}
+section{padding:clamp(64px,9vw,100px) 0}
+.alt{background:#0B1019E6;border-block:1px solid var(--ln)}
+.eb{color:var(--cy);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.lead{color:var(--mt);max-width:40em}
+svg.i{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border:1px solid var(--bl);border-radius:12px;background:transparent;font-weight:700;font-size:.95rem;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s}
+.btn:hover{border-color:var(--cy)}
+.anim .btn:hover{transform:translateY(-1px)}
+html.anim{scroll-behavior:smooth}
+.btn.p{background:linear-gradient(135deg,var(--bl),#0456C4);border-color:transparent;box-shadow:0 0 28px #087BFF55}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn .i{width:18px;height:18px}
+.btn.sm{min-height:44px;padding:0 18px;font-size:.85rem}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+
+/* Cabeçalho */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,box-shadow .3s}
+header.s{background:#05070BF2;backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--ln)}
+
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo img{width:52px;height:52px;border-radius:50%;box-shadow:0 0 0 1px #087BFF66,0 0 22px #087BFF55}
+.menu{display:flex;gap:26px;font-size:.84rem;font-weight:600;color:var(--mt)}
+.menu a:hover{color:var(--tx)}
+.hr{display:flex;align-items:center;gap:12px}
+.burger{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--ln);border-radius:10px;background:none;cursor:pointer}
+.burger .i{width:22px;height:22px}
+.burger{color:var(--mt)}
+.burger[aria-pressed=true]{border-color:var(--cy);color:var(--cy);box-shadow:0 0 14px #00D9FF44}
+.hr .sm{display:none}
+@media(min-width:1100px){.hr .sm{display:inline-flex}}
+
+@media(max-width:1099px){.menu{display:none}}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 100px;overflow:hidden;background:radial-gradient(70% 55% at 75% 35%,#087BFF38,transparent 70%),#05070B}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#05070B00 0%,#05070B99 45%,#05070B 95%)}
+.hero-c{position:relative;z-index:1}
+.hp{color:var(--mt);max-width:30em;margin-bottom:28px}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.acts .btn{flex:1 1 220px}
+
+
+@media(min-width:900px){.hero{align-items:center;padding:150px 0 100px}.hero:after{background:linear-gradient(90deg,#05070B 8%,#05070BDD 45%,#05070B22 100%)}.hero-c{max-width:640px}.acts .btn{flex:0 1 auto}}
+
+/* Serviços */
+.grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
+@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr);gap:20px}}
+.card{position:relative;isolation:isolate;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;padding:18px;border:1px solid var(--ln);border-radius:16px;overflow:hidden;background:radial-gradient(160px at 85% 15%,#087BFF40,transparent),linear-gradient(160deg,#0F1A2C,#05070B);transition:border-color .25s,box-shadow .25s}
+.card>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform .6s}
+.card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#05070B22,#05070BF0 80%)}
+.card:hover{border-color:var(--cy);box-shadow:0 0 0 1px var(--cy),0 14px 40px #087BFF33}
+.anim .card:hover>img{transform:scale(1.05)}
+.card .ic{width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--cy);border-radius:12px;background:#00D9FF14;color:var(--cy)}
+.card .ic .i{width:24px;height:24px}
+.card h3{font-size:1.2rem;margin-bottom:4px}
+.card p{color:#C9D3E3;font-size:.9rem}
+
+.tabela{display:grid;gap:18px;margin-top:28px}
+@media(min-width:800px){.tabela{grid-template-columns:1fr 1fr}}
+.tcol{border:1px solid var(--ln);border-radius:16px;padding:22px;background:var(--bg)}
+.tcol h3{margin-bottom:6px}
+.tcol h4{font-size:.8rem;color:var(--cy);margin:18px 0 4px;letter-spacing:.04em}
+.tcol ul{list-style:none}
+.tcol li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--ln);font-size:.92rem}
+.tcol li span{color:var(--mt)}
+.tcol li b{white-space:nowrap}
+.note{margin-top:18px;font-size:.85rem;color:var(--mt)}
+/* Seletor (galeria) */
+.seg{display:inline-flex;gap:4px;padding:4px;max-width:100%;overflow-x:auto;border:1px solid var(--ln);border-radius:999px;background:var(--bg);margin-top:28px}
+.seg button{min-height:40px;padding:0 20px;border:0;border-radius:999px;background:none;color:var(--mt);font-weight:600;font-size:.88rem;cursor:pointer;white-space:nowrap}
+.seg button[aria-pressed=true]{background:var(--bl);color:#fff;box-shadow:0 0 18px #087BFF66}
+
+/* Galeria antes/depois */
+.gal{display:grid;gap:22px;margin-top:28px;grid-template-columns:1fr}
+@media(min-width:640px){.gal{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.gal{grid-template-columns:repeat(3,1fr)}}
+figure figcaption{margin-top:12px;font-weight:600;font-size:.95rem}
+.ba{position:relative;isolation:isolate;aspect-ratio:960/1001;border:1px solid var(--ln);border-radius:16px;overflow:hidden;background:#0A0F18;--p:50%}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.ba .a{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.ba .ln{position:absolute;top:0;bottom:0;left:var(--p);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 12px var(--cy);pointer-events:none;z-index:2}
+.ba .kn{position:absolute;top:50%;left:var(--p);width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#05070BDD;border:1px solid var(--cy);box-shadow:0 0 18px #00D9FF55;pointer-events:none;z-index:2}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:3}
+.tg{position:absolute;top:12px;z-index:2;padding:6px 12px;border-radius:999px;background:#000B;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}
+.tg.l{left:12px}.tg.r{right:12px;background:var(--bl)}
+
+/* Sobre */
+.sb{display:grid;gap:40px}
+@media(min-width:900px){.sb{grid-template-columns:1fr 1fr;align-items:center}}
+.ben{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ben li{padding:20px;border:1px solid var(--ln);border-radius:16px;background:#05070B99}
+.ben .i{color:var(--cy);margin-bottom:12px}
+.ben b{display:block;font-family:Manrope,sans-serif;font-weight:800;margin-bottom:4px}
+.ben span{color:var(--mt);font-size:.88rem}
+
+/* Agendamento */
+.bk{display:grid;gap:24px;margin-top:40px}
+@media(min-width:960px){.bk{grid-template-columns:330px 1fr;align-items:start}}
+.panel{border:1px solid var(--ln);border-radius:20px;background:var(--bg2);padding:24px}
+.bk>*{min-width:0}
+.wa{width:100%;margin-top:18px}
+.wa.off{opacity:.45;pointer-events:none;box-shadow:none}
+.wh{margin-top:10px;font-size:.85rem;color:var(--mt)}
+.sum{list-style:none;display:grid;gap:12px;font-size:.9rem}
+.sum li{display:flex;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--ln)}
+.sum span{color:var(--mt);flex:none}
+.sum b{text-align:right}
+.fine{display:flex;gap:8px;align-items:center;margin-top:20px;font-size:.8rem;color:var(--mt)}
+.fine .i{width:16px;height:16px;color:var(--cy)}
+.stp{list-style:none;display:flex;gap:10px;margin-bottom:26px;font-size:.82rem;color:var(--mt)}
+.stp li{flex:1 1 0;min-width:0;display:flex;align-items:center;gap:8px;padding-top:12px;border-top:2px solid var(--ln)}
+.stp li.on{border-color:var(--cy);color:var(--tx);font-weight:600}
+.stp span{width:26px;height:26px;flex:none;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-size:.75rem;font-weight:700}
+.stp li.on span{background:var(--bl);border-color:var(--bl);color:#fff}
+label{display:block;margin:18px 0 8px;font-size:.84rem;font-weight:600;color:var(--mt)}
+.in{color-scheme:dark;width:100%;min-height:52px;padding:0 14px;border:1px solid var(--ln);border-radius:12px;background:var(--bg);outline:none;transition:border-color .2s,box-shadow .2s}
+.in:focus{border-color:var(--cy);box-shadow:0 0 0 3px #00D9FF22}
+.g2{display:grid;gap:0 14px}
+@media(min-width:620px){.g2{grid-template-columns:1fr 1fr}}
+.vt{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--ln);border-radius:12px;background:var(--bg)}
+.vt{display:flex;width:100%}
+.vt button{flex:1;min-width:0;min-height:42px;border:0;border-radius:9px;background:none;color:var(--mt);font-weight:600;cursor:pointer}
+.vt button[aria-pressed=true]{background:var(--bl);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+.chips>.cw{flex:1 1 190px;display:flex;flex-direction:column}
+.cw>.chip{flex:1}
+.chip{min-height:56px;padding:10px 14px;border:1px solid var(--ln);border-radius:12px;background:var(--bg);text-align:left;font-weight:600;font-size:.88rem;cursor:pointer;transition:.2s}
+.chip small{display:block;color:var(--mt);font-weight:500;font-size:.8rem}
+.chip[aria-pressed=true]{border-color:var(--cy);background:#087BFF1F;box-shadow:inset 0 0 0 1px var(--cy)}
+.cal{border:1px solid var(--ln);border-radius:14px;padding:14px;background:var(--bg)}
+.calh{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-weight:700}
+.calh span{text-transform:capitalize}
+.calh button{width:40px;height:40px;border:1px solid var(--ln);border-radius:10px;background:none;cursor:pointer;font-size:1.2rem}
+.cg{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;text-align:center;font-size:.9rem}
+.cg i{font-style:normal;color:var(--mt);font-size:.75rem;padding:4px 0}
+.cg button{min-height:40px;min-width:0;padding:0;border:0;border-radius:10px;background:none;cursor:pointer}
+.cg button:not(:disabled):hover{background:#087BFF22}
+.cg button:disabled{color:#3A4658;cursor:not-allowed}
+.cg button.on{background:var(--bl);color:#fff;box-shadow:0 0 16px #087BFF66}
+.err{min-height:1.4em;margin-top:14px;color:#FF8C8C;font-size:.88rem}
+.nv{display:flex;justify-content:space-between;gap:12px;margin-top:8px}
+.nv .btn{min-width:0;flex:1 1 140px}
+.ok{text-align:center;padding:12px 0}
+.okc{width:76px;height:76px;margin:0 auto 18px;display:grid;place-items:center;border:2px solid var(--cy);border-radius:50%;color:var(--cy);box-shadow:0 0 30px #00D9FF55}
+.okc .i{width:36px;height:36px}
+.ok .sum{text-align:left;margin:22px 0}
+.ok .btn{width:100%}
+.ok .okb{display:grid;gap:12px;margin-top:12px}
+@media(min-width:620px){.ok .okb{grid-template-columns:1fr 1fr}}
+#okwa,#volt,#home{scroll-margin-bottom:96px}
+
+/* Escolha de hora: botões grandes, fáceis de tocar */
+.hgrid,.mgrid{display:grid;gap:10px}
+.hgrid{display:flex;flex-wrap:wrap;justify-content:center}
+.hgrid .hb{flex:1 1 84px;max-width:120px}
+.mgrid{grid-template-columns:repeat(4,1fr)}
+.hb,.mb{min-height:60px;border:1px solid var(--ln);border-radius:12px;background:var(--bg);font-weight:700;font-size:1.25rem;cursor:pointer}
+.hb[aria-pressed=true],.mb[aria-pressed=true]{border-color:var(--cy);background:var(--bl);color:#fff;box-shadow:0 0 16px #087BFF66}
+.hb:disabled,.mb:disabled{opacity:.3;cursor:not-allowed}
+.hres{margin:16px 0 4px;font-size:1.15rem;font-weight:700}
+.cg{gap:8px}
+.cg button{min-height:50px;font-size:1.1rem}
+.calh button{width:54px;height:54px;font-size:1.6rem}
+.cg i{font-size:.85rem}
+/* FAQ */
+.fq{display:grid;gap:36px}
+@media(min-width:900px){.fq{grid-template-columns:1fr 1.4fr;align-items:start}}
+details{border-top:1px solid var(--ln)}
+details:last-child{border-bottom:1px solid var(--ln)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:700;font-size:1.02rem}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--cy);border-radius:50%;color:var(--cy);font-size:1.2rem;transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:var(--mt);padding:0 0 20px;font-size:.95rem}
+
+/* Localização */
+.lc{display:grid;gap:36px}
+@media(min-width:900px){.lc{grid-template-columns:1fr 1.1fr;align-items:center}}
+.ci{list-style:none;margin:26px 0}
+.ci li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--ln)}
+.ci .i{color:var(--cy);margin-top:2px}
+.ci b{display:block;font-size:.8rem;color:var(--mt);font-weight:600}
+.ci span,.ci a{font-weight:600}
+.ci a:hover{color:var(--cy)}
+.ci small{display:block;color:var(--mt);font-size:.85rem}
+.map{border:1px solid var(--ln);border-radius:20px;overflow:hidden;min-height:340px;background:var(--bg2)}
+.map iframe{display:block;width:100%;height:100%;min-height:340px;border:0;filter:saturate(.7) brightness(.85) contrast(1.05)}
+
+/* Chamada final */
+.cb{position:relative;isolation:isolate;overflow:hidden;padding:110px 0;text-align:center;border-top:1px solid var(--ln);background:radial-gradient(60% 80% at 50% 50%,#087BFF30,transparent 70%),var(--bg)}
+.cb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;z-index:-2;opacity:.7}
+.cb:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#05070B66,#05070BB8)}
+.cb h2{max-width:14em;margin:0 auto 14px}
+.cb p{color:var(--mt);margin:0 auto 28px;max-width:32em}
+.cb .btn{min-width:min(100%,280px)}
+
+/* Rodapé */
+footer{border-top:1px solid var(--ln);padding:56px 0 40px;color:var(--mt);font-size:.9rem}
+.ft{display:grid;gap:32px}
+@media(min-width:800px){.ft{grid-template-columns:1.4fr 1fr 1fr}}
+.fb img{width:64px;height:64px;border-radius:50%;margin-bottom:14px}
+.fb p{color:var(--tx);font-family:Manrope,sans-serif;font-weight:700;font-size:1.05rem}
+.fl,.fs{display:grid;gap:10px;align-content:start}
+.fl b,.fs b{color:var(--tx);font-weight:700}
+.fl a:hover{color:var(--cy)}
+.fs div{display:flex;gap:10px}
+.fs a{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--ln);border-radius:12px;color:var(--tx)}
+.fs a:hover{border-color:var(--cy);color:var(--cy)}
+.copy{margin-top:40px;padding-top:24px;border-top:1px solid var(--ln);text-align:center;font-size:.82rem}
+
+/* Painel "Mais": só o que não está na barra de baixo */
+.more{position:fixed;left:14px;right:14px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:56;padding:4px 16px;background:#0B1019;border:1px solid var(--ln);border-radius:16px;box-shadow:0 18px 50px #000c}
+.more a{display:flex;justify-content:space-between;align-items:center;min-height:54px;border-bottom:1px solid var(--ln);font-weight:600}
+.more a:last-child{border-bottom:0}
+.more a span{color:var(--cy);font-size:1.2rem}
+.more a:hover,.more a:focus-visible{color:var(--cy)}
+/* Barra inferior (celular) */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:55;display:grid;grid-template-columns:repeat(5,1fr);padding:8px 6px calc(8px + env(safe-area-inset-bottom,0px));background:#05070BF5;backdrop-filter:blur(12px);border-top:1px solid var(--ln)}
+.tabs a,.tabs button{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 0;border:0;background:none;color:var(--mt);font-size:.68rem;cursor:pointer}
+.tabs .i{width:22px;height:22px}
+
+/* Animações: só existem com html.anim (ligadas). Sem elas, o site funciona igual.
+   Uma entrada no topo, e o resto responde só às ações do usuário. */
+.anim .hero .eb,.anim .hero h1,.anim .hero .hp,.anim .hero .acts{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.anim .hero h1{animation-delay:.12s}
+.anim .hero .hp{animation-delay:.24s}
+.anim .hero .acts{animation-delay:.36s}
+.anim .hero-bg:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 42%,#BFEBFF24 50%,transparent 58%);transform:translateX(-100%);animation:sweep 7s 1.2s ease-in-out infinite}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes sweep{0%{transform:translateX(-100%)}35%,100%{transform:translateX(100%)}}
+@keyframes down{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+@keyframes pop{from{color:var(--cy)}to{color:var(--tx)}}
+@keyframes pin{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+.anim [data-s]:not([hidden]){animation:up .45s cubic-bezier(.2,.7,.2,1) both}
+.anim .gal figure{animation:up .45s both}
+.anim #mais:not([hidden]){animation:up .3s both}
+.anim details[open] p{animation:up .35s both}
+.anim .okc{animation:pin .6s cubic-bezier(.2,1.3,.3,1) both}
+.anim #tt.pop{animation:pop .5s ease}
+.ba.hint .a,.ba.hint .ln,.ba.hint .kn{transition:clip-path .6s ease,left .6s ease}
+/* Movimento contínuo (só com html.anim): luz passando, reflexo e respiração */
+.anim .hero h1 em{color:transparent;background:linear-gradient(90deg,#087BFF 0%,#8FE3FF 48%,#087BFF 62%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;animation:hue 4.5s linear infinite}
+header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;pointer-events:none;background:linear-gradient(90deg,#00d9ff40,#00d9ff40) no-repeat}
+.anim header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,#E6FBFF,transparent) no-repeat,linear-gradient(90deg,#00d9ff40,#00d9ff40) no-repeat;background-size:30% 100%,100% 100%;animation:scan 3.6s linear infinite}
+.anim .logo{position:relative}
+.anim .logo:before{content:"";position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 62%,#00D9FF 80%,transparent 92%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1.5px));mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1.5px));animation:spin 6s linear infinite}
+.anim .card:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(100deg,transparent 30%,#BFEBFF26 50%,transparent 70%);transform:translateX(-120%);animation:cardsweep 7s ease-in-out infinite}
+.anim .card:nth-child(2):before{animation-delay:2.3s}
+.anim .card:nth-child(3):before{animation-delay:4.6s}
+.anim .card>div,.anim .card .ic{position:relative;z-index:1}
+.anim .card .ic{animation:glow 3s ease-in-out infinite}
+.anim .btn.p{position:relative;overflow:hidden}
+.anim .btn.p:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 35%,#ffffff2e 50%,transparent 65%);transform:translateX(-120%);animation:btnshine 3.8s ease-in-out infinite}
+.anim .stp li.on span{animation:ring 2.2s ease-out infinite}
+.anim .ben .i{animation:float 4.5s ease-in-out infinite}
+.anim .ben li:nth-child(2) .i{animation-delay:-1.1s}
+.anim .ben li:nth-child(3) .i{animation-delay:-2.2s}
+.anim .ben li:nth-child(4) .i{animation-delay:-3.3s}
+#fx{display:none;position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.anim #fx{display:block}
+@keyframes hue{from{background-position:100% 0}to{background-position:-100% 0}}
+@keyframes scan{from{background-position:-60% 0,0 0}to{background-position:160% 0,0 0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes cardsweep{0%{transform:translateX(-120%)}40%,100%{transform:translateX(120%)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 #00D9FF00}50%{box-shadow:0 0 18px #00D9FF88}}
+@keyframes btnshine{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 #087BFF99}100%{box-shadow:0 0 0 10px #087BFF00}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+html:not(.anim) *,html:not(.anim) *::before,html:not(.anim) *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* Ajustes desktop */
+@media(min-width:900px){
+.hero-c{max-width:640px;margin-left:max(20px,calc((100% - 1200px)/2));margin-right:auto}
+.hero{min-height:min(100vh,860px)}
+}
+@media(min-width:640px){
+.gal{display:flex;flex-wrap:wrap;justify-content:center}
+.gal figure{flex:0 1 calc((100% - 22px)/2);min-width:0}
+}
+@media(min-width:1000px){
+.gal figure{flex:0 1 calc((100% - 44px)/3)}
+}
+@media(min-width:1100px){
+section{padding:clamp(80px,8vw,120px) 0}
+.hero{padding-top:150px}
+}
+@media(min-width:960px){.bk{grid-template-columns:minmax(0,860px);justify-content:center}}
+/* Créditos */
+.cr{position:relative;isolation:isolate;overflow:hidden;margin-top:36px;padding:34px 24px;border:1px solid var(--ln);border-radius:20px;text-align:center;background:radial-gradient(60% 120% at 50% 0%,#087BFF2E,transparent 70%),linear-gradient(160deg,#0F1A2C,#05070B)}
+.cr:before{content:"";position:absolute;left:12%;right:12%;top:0;height:1px;background:linear-gradient(90deg,transparent,#00D9FF,transparent)}
+.cr .eb{display:block}
+.cr h3{margin:8px 0 6px;font-size:clamp(1.5rem,3.4vw,2rem);background:linear-gradient(90deg,#fff,#8FE3FF 60%,#087BFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cr p{color:var(--mt);max-width:30em;margin:0 auto 22px;font-size:.92rem}
+.cr .acts{justify-content:center}
+.cr .btn{flex:0 1 auto;width:min(100%,300px);color:var(--tx);cursor:pointer}
+.cr .btn .i{width:20px;height:20px}
+.cr .btn:not(.p){background:#05070B80}
+.copy{margin-top:28px}
+/* Info (!) dos serviços */
+.cw{position:relative;min-width:0}
+.cw .chip{width:100%;padding-right:48px}
+.inf{position:absolute;top:10px;right:10px;width:32px;height:32px;display:grid;place-items:center;padding:0;border:1px solid var(--cy);border-radius:50%;background:#00D9FF14;color:var(--cy);font:800 1rem/1 Manrope,Inter,sans-serif;cursor:pointer;transition:background .2s,color .2s}
+.inf:hover,.inf[aria-expanded=true]{background:var(--cy);color:#05070B}
+.dsc{margin-top:6px;padding:10px 12px;border:1px solid var(--ln);border-left:3px solid var(--cy);border-radius:10px;background:#087BFF14;color:#C9D3E3;font-size:.84rem;line-height:1.5}
+/* Texto do topo mais alto */
+.hero{padding-bottom:110px}
+@media(min-width:900px){.hero{padding-top:195px;padding-bottom:160px}}
+/* Aparecer ao rolar (só com animações ligadas) */
+.bl{display:none;font-size:.8rem;font-weight:600;white-space:nowrap}
+.anim .rv{opacity:0;transform:translateY(16px);transition:opacity .5s ease-out,transform .5s ease-out;transition-delay:var(--d,0s)}
+.anim .rv.rv-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.anim .rv{transform:none;transition:opacity .6s ease!important;transition-delay:var(--d,0s)!important}}
+/* Endereço e confirmação no fim do agendamento */
+.endc{margin-top:22px;padding:18px;border:1px solid var(--ln);border-left:3px solid var(--cy);border-radius:14px;background:#087BFF14}
+.endc .eb{margin-bottom:8px}
+.endt{font-family:Manrope,sans-serif;font-weight:800;font-size:1.1rem;line-height:1.3}
+.endl{display:inline-flex;align-items:center;gap:8px;margin-top:8px;font-size:.85rem;font-weight:600;color:var(--cy)}
+.endl .i{width:16px;height:16px}
+.endl:hover{text-decoration:underline}
+.ck{display:flex;gap:12px;align-items:flex-start;margin:16px 0 0;font-size:.92rem;font-weight:600;color:var(--tx);cursor:pointer}
+.ck input{width:22px;height:22px;flex:none;margin-top:1px;accent-color:var(--bl);cursor:pointer}
+/* Topo: texto um pouco mais abaixo; a foto vai até a barra de baixo, sem aparecer a seção de serviços */
+.hero{align-items:flex-start;min-height:calc(100vh - 72px);min-height:calc(100lvh - 72px - env(safe-area-inset-bottom,0px));padding:170px 0 40px}
+@media(min-width:900px){.hero{min-height:min(100vh,860px);padding:160px 0 120px}}
+@media(max-width:1099px){.hero{min-height:calc(100vh - var(--tabs-h,72px));min-height:calc(100svh - var(--tabs-h,72px))}}
+/* Computador: botão para ver o site no tamanho do celular (compacto, com todas as imagens) */
+.vcb{display:none;place-items:center;width:44px;height:44px;flex:none;border:1px solid var(--ln);border-radius:10px;background:none;color:var(--mt);cursor:pointer;transition:border-color .2s,color .2s}
+.vcb .i{width:22px;height:22px}
+.vcb:hover{border-color:var(--cy);color:var(--cy)}
+@media(min-width:1100px){.vcb{display:grid}}
+.pv{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:16px;background:#020409E6;backdrop-filter:blur(6px)}
+.pv-f{width:min(410px,calc(100vw - 32px));height:min(864px,calc(100vh - 116px));border:10px solid #0B1019;border-radius:44px;overflow:hidden;background:var(--bg);box-shadow:0 0 0 1px var(--ln),0 30px 80px #000C}
+.pv-f iframe{display:block;width:100%;height:100%;border:0}
+html.vc .vcb,html.vc #pv{display:none!important}
+/* Na confirmação, a barra mostra só o Zinho apontando o botão do WhatsApp */
+.acao.final .nv,.acao.final .err{display:none}
+/* Orientação durante o agendamento: fica junto dos botões, sem precisar descer a tela */
+.acao{position:fixed;z-index:45;padding:12px 14px 8px;background:var(--bg2);border:1px solid var(--cy);border-radius:16px;box-shadow:0 12px 36px #000c}
+.acao.zi-off{display:none}
+/* Agendamento em tela própria: abre por cima do site, com o Zinho guiando */
+html:not(.ag-on) .acao{display:none}
+html.ag-on{overflow:hidden}
+.ag-topo{display:none}
+#agendar.ag-tela{position:fixed;inset:0;z-index:90;overflow-y:auto;padding:0 0 40px;background:var(--bg);scroll-padding-top:70px;scroll-padding-bottom:170px}
+#agendar.ag-tela .ag-topo{display:flex;position:sticky;top:0;z-index:5;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:var(--bg);border-bottom:1px solid var(--ln)}
+#agendar.ag-tela .ag-topo b{font-family:Manrope,sans-serif;font-weight:800;font-size:1rem}
+#agendar.ag-tela .w{padding-top:18px}
+/* Modo sem o Zinho (se ele falhar): os botões Voltar e Próximo continuam, na própria página */
+.aviso-zinho{display:none;margin:0 0 10px;font-size:.92rem;color:var(--mt);text-align:center}
+.sem-zinho .aviso-zinho{display:block}
+.sem-zinho .acao .zinho{display:none}
+.sem-zinho .acao{position:relative!important;top:auto!important;bottom:auto!important;left:auto!important;width:auto!important;box-shadow:none;margin-top:16px}
+.sem-zinho .acao-vaga{display:none}
+.sem-zinho .zinho-alvo{outline:none;box-shadow:none}
+/* Com o teclado do celular aberto: faixa curta no topo, sem cobrir o campo que está sendo preenchido */
+.acao.teclado{padding:6px 10px 6px}
+.acao.teclado .nv{display:none}
+.acao.teclado .zinho{margin:0;gap:8px}
+.acao.teclado .zinho .zw{width:40px}
+.acao.teclado .zinho .robo{width:36px;height:31px}
+.acao.teclado .zinho .nomez{display:none}
+.acao.teclado .zinho .fala-t{font-size:.86rem;line-height:1.3}
+.acao.teclado .zinho .bolha{padding:6px 10px}
+@media(max-width:1099px){
+ .acao{padding:10px 12px 8px}
+ .acao .zinho{gap:10px;margin:0 0 10px}
+ .acao .zinho .zw{width:52px}
+ .acao .zinho .robo{width:46px;height:40px}
+ .acao .zinho .fala-t{font-size:.94rem;line-height:1.35}
+ .acao .zinho .bolha{padding:10px 12px}
+ .acao .nv .btn{min-height:46px}
+}
+.acao-vaga{height:0}
+/* Zinho: robô-carro que mostra e fala o que fazer em cada passo */
+.zinho{display:flex;align-items:center;gap:12px;margin:0 0 12px;text-align:left}
+.zinho .zw{flex:none;display:grid;justify-items:center;width:64px}
+.zinho .robo{width:58px;height:52px;overflow:visible}
+.nomez{font-family:Manrope,sans-serif;font-weight:800;font-size:.72rem;color:var(--cy);letter-spacing:.04em}
+.zinho .bolha{flex:1;min-width:0;display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid var(--cy);border-radius:14px;background:#00D9FF0F}
+.zinho .fala-t{flex:1;min-width:0;margin:0;font-weight:700;font-size:.98rem;line-height:1.4;color:var(--tx)}
+.zinho-alvo{outline:3px solid var(--cy);outline-offset:4px;border-radius:12px;box-shadow:0 0 0 8px #00D9FF26;transition:box-shadow .3s}
+.anim .zinho .robo{animation:flutua 2.6s ease-in-out infinite}
+.anim .zinho .antena{animation:antena 1.6s ease-in-out infinite}
+.anim .zinho .olho{transform-box:fill-box;transform-origin:center;animation:piscar 5s infinite}
+@keyframes flutua{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes antena{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes piscar{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes balanca{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+@keyframes fala{from{transform:scaleY(.4)}to{transform:scaleY(2.4)}}
+.acao .err{min-height:0;margin:6px 0 0;text-align:center}
+.acao .err:empty{display:none}
+.nv .btn.pronto{box-shadow:0 0 0 3px var(--cy),0 0 26px #00D9FF88}
+/* ===== Computador: imagens inteiras e nítidas + agendamento com o Zinho ao lado ===== */
+.fala-f{display:none;margin:8px 0 0;color:var(--mt);font-size:.9rem;line-height:1.5}
+.fala-f:empty{display:none!important}
+@media(min-width:900px){
+.card{aspect-ratio:4/3;min-height:0;padding:22px}
+}
+@media(min-width:1000px){
+/* Topo: a foto em retrato vira um quadro 4:5 inteiro, sem corte e sem ampliar */
+.hero{align-items:center;padding:150px 0 90px;min-height:min(100vh,880px)}
+.hero:after{background:linear-gradient(90deg,#05070B 0%,#05070BB8 30%,#05070B00 50%)}
+.hero-bg{inset:auto;top:calc(50% + 34px);right:max(20px,calc((100% - 1200px)/2));height:min(calc(100% - 176px),740px,calc((100vw - 640px)*1.25));aspect-ratio:4/5;transform:translateY(-50%);border-radius:24px;overflow:hidden;border:1px solid #087BFF66;box-shadow:0 0 0 1px #00D9FF22,0 0 90px #087BFF44,0 30px 80px #000A}
+.hero-bg img{object-position:50% 50%}
+.hero-c{max-width:560px}
+.hero h1{font-size:clamp(2.8rem,4.6vw,4.4rem)}
+/* Chamada final: foto inteira ao lado do texto */
+.cb{display:flex;align-items:center;justify-content:center;gap:clamp(40px,6vw,96px);padding:96px max(20px,calc((100% - 1200px)/2));text-align:left}
+.cb:after{display:none}
+.cb img{position:static;order:2;flex:none;width:min(440px,38vw);height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 50%;opacity:1;z-index:auto;border-radius:24px;border:1px solid #087BFF66;box-shadow:0 0 0 1px #00D9FF22,0 0 90px #087BFF44,0 30px 80px #000A}
+.cb .w{width:auto;max-width:520px;margin:0}
+.cb h2,.cb p{margin-left:0;margin-right:0}
+}
+@media(min-width:1100px){
+html.ag-on #agendar.ag-tela{background:radial-gradient(60% 40% at 20% 0%,#087BFF22,transparent 70%),var(--bg)}
+#agendar.ag-tela .w{width:min(1180px,calc(100% - 48px));padding-top:28px}
+#agendar.ag-tela .w>.eb,#agendar.ag-tela .w>h2,#agendar.ag-tela .w>.lead{display:none}
+#agendar.ag-tela .bk{grid-template-columns:minmax(0,1fr);margin-top:0}
+#agendar.ag-tela .panel{display:grid;grid-template-columns:360px minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:32px;padding:32px}
+#agendar.ag-tela .stp{grid-column:2;grid-row:1}
+#agendar.ag-tela #fm,#agendar.ag-tela #ok{grid-column:2;grid-row:2}
+#agendar.ag-tela .acao{grid-column:1;grid-row:1/span 2;position:sticky;top:84px;align-self:start;left:auto;bottom:auto;width:auto;padding:22px;border-radius:20px;box-shadow:0 0 40px #087BFF2E}
+#agendar.ag-tela .acao-vaga{display:none}
+.acao .zinho{flex-direction:column;align-items:stretch;gap:16px;margin:0 0 16px}
+.acao .zinho .zw{width:auto}
+.acao .zinho .robo{width:130px;height:117px}
+.acao .zinho .nomez{font-size:.9rem}
+.acao .zinho .bolha{padding:16px}
+.acao .zinho .fala-t{font-size:1.12rem;line-height:1.4}
+.fala-f{display:block}
+.acao .nv .btn{min-height:52px}
+}
+
+#agendar:not(.ag-tela){display:none}
+.esc{display:grid;gap:16px;margin-top:36px}
+@media(min-width:700px){.esc{grid-template-columns:1fr 1fr;max-width:820px}}
+.esc button{display:flex;align-items:center;gap:18px;min-height:112px;padding:20px 24px;border:1px solid var(--ln);border-radius:20px;background:linear-gradient(160deg,#0F1A2C,#05070B);text-align:left;cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s}
+.esc button:hover,.esc button:focus-visible{border-color:var(--cy);box-shadow:0 0 0 1px var(--cy),0 14px 40px #087BFF33}
+.esc .ic{width:60px;height:60px;flex:none;display:grid;place-items:center;border:1px solid var(--cy);border-radius:16px;background:#00D9FF14;color:var(--cy)}
+.esc .ic .i{width:30px;height:30px}
+.esc b{display:block;font-family:Manrope,sans-serif;font-weight:800;font-size:1.4rem}
+.esc small{display:block;color:var(--mt);font-size:.9rem}
+.esc .go{margin-left:auto;color:var(--cy)}.nv .btn:disabled{opacity:.3;cursor:not-allowed;box-shadow:none;transform:none}
+.tcol{padding:0;overflow:hidden;display:flex;flex-direction:column;border-radius:20px}
+.tfoto{position:relative;aspect-ratio:16/10;overflow:hidden}
+.tfoto img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transition:transform .6s}
+.tfoto:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#05070B10 35%,#05070BEE)}
+.tfoto .tt{position:absolute;left:22px;right:22px;bottom:18px;z-index:1}
+.tfoto h3{font-size:1.9rem;margin:2px 0 0}
+.anim .tcol:hover .tfoto img{transform:scale(1.04)}
+.tb{display:flex;flex-direction:column;flex:1;padding:6px 22px 22px}
+.tb>ul:last-of-type{margin-bottom:22px}
+.tb .wa{margin-top:auto}
+.tcol li{display:block;padding:0}
+.tcol details{border:0}
+.tcol summary{padding:11px 0;font-weight:600;font-size:.92rem;gap:10px}
+.tcol summary span{flex:1;min-width:0;color:var(--tx)}
+.tcol summary b{white-space:nowrap;font-weight:700}
+.tcol summary:after{content:"!";width:28px;height:28px;flex:none;border:1.5px solid var(--cy);background:#00D9FF2E;color:var(--cy);font:800 1rem/1 Manrope,Inter,sans-serif;box-shadow:0 0 12px #00D9FF55}
+.tcol details[open] summary:after{transform:none;background:var(--cy);color:#05070B;animation:none!important}
+.tcol summary:hover:after{background:var(--cy);color:#05070B}
+.anim .tcol details:not([open]) summary:after{animation:alerta 1.5s ease-in-out infinite}
+.anim .tcol li:nth-child(odd) details:not([open]) summary:after{animation-delay:.6s}
+@keyframes alerta{0%,100%{box-shadow:0 0 0 0 #00D9FF99,0 0 10px #00D9FF55;background:#00D9FF2E}50%{box-shadow:0 0 0 9px #00D9FF00,0 0 20px #00D9FFAA;background:#00D9FF77}}
+.tcol details small{display:block;padding:0 32px 12px 0;color:var(--mt);font-size:.84rem;line-height:1.5}
+.tfoto{aspect-ratio:16/9}
+.tfoto img{object-position:50% 55%}
+.dv{margin:10px 0 2px;color:var(--mt);font-size:.8rem}
+.bsite{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px 0 8px;border:1px solid var(--cy);border-radius:999px;background:linear-gradient(135deg,#00D9FF1F,#087BFF1F);color:var(--tx);font-weight:700;font-size:.9rem;cursor:pointer;box-shadow:0 0 18px #00D9FF33;transition:box-shadow .2s,transform .2s}
+.bsite .bs-i{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--cy);color:#05070B;transition:transform .2s}
+.bsite .bs-i .i{width:16px;height:16px;transform:rotate(180deg);stroke-width:2.4}
+.bsite:hover{box-shadow:0 0 28px #00D9FF77}
+.bsite:hover .bs-i{transform:translateX(-3px)}
+.ag-dir{display:flex;align-items:center;gap:12px}
+.agz{min-height:40px;padding:0 14px;border:1px solid var(--ln);border-radius:999px;background:none;color:var(--mt);font-weight:600;font-size:.8rem;cursor:pointer;white-space:nowrap}
+.agz:hover,.sem-zinho .agz{border-color:var(--cy);color:var(--cy)}
+.sem-zinho .acao.teclado .nv{display:flex}
+@media(max-width:520px){.ag-dir b{display:none}}
+/* Modo manual fixo: sem o robô. Voltar e Próximo ficam sempre visíveis no rodapé da tela */
+.aviso-zinho,.agz{display:none!important}
+.sem-zinho .acao{position:sticky!important;top:auto!important;bottom:0!important;left:auto!important;width:auto!important;z-index:6;margin:18px 0 0;padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px));border:0;border-top:1px solid var(--ln);border-radius:0;background:var(--bg2);box-shadow:none}
+.sem-zinho .acao.final{display:none}
+.sem-zinho .acao .err{margin:0 0 8px}
+@media(min-width:1100px){
+.sem-zinho #agendar.ag-tela .panel{grid-template-columns:minmax(0,1fr);max-width:860px;margin-inline:auto}
+.sem-zinho #agendar.ag-tela .stp,.sem-zinho #agendar.ag-tela #fm,.sem-zinho #agendar.ag-tela #ok{grid-column:1}
+.sem-zinho #agendar.ag-tela .acao{grid-column:1;grid-row:3;padding:14px 0}
+}
+/* Texto do topo mais para cima */
+.hero{padding-top:156px}
+@media(min-width:900px){.hero{padding-top:146px}}
+@media(min-width:1000px){.hero{padding:136px 0 150px}
+.hero-bg{height:min(calc(100% - 240px),600px,calc((100vw - 700px)*1.25))}}
+/* Heros atualizados: fotos em paisagem (16:9) */
+/* Topo — celular/tablet: foto em tela cheia no fundo, moto e carro grandes */
+@media(max-width:999px){
+.hero-bg img{object-position:48% 50%}
+}
+/* Topo — computador: foto ocupa a direita, sem quadro, esmaecendo para o texto */
+@media(min-width:1000px){
+.hero-bg{inset:0 0 0 34%;top:0;right:0;height:auto;aspect-ratio:auto;transform:none;border:0;border-radius:0;box-shadow:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 38%);mask-image:linear-gradient(90deg,transparent 0,#000 38%)}
+.hero-bg img{object-position:50% 50%}
+.hero:after{background:linear-gradient(180deg,#05070B00 70%,#05070B 100%)}
+}
+/* Chamada final — foto de fundo em largura total */
+.cb img{object-position:45% 55%;opacity:.6}
+@media(min-width:1000px){
+.cb{display:block;padding:130px 0;text-align:center}
+.cb:after{display:block}
+.cb img{position:absolute;inset:0;order:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 58%;opacity:.62;z-index:-2;border:0;border-radius:0;box-shadow:none}
+.cb .w{width:min(1200px,calc(100% - 40px));max-width:none;margin-inline:auto}
+.cb h2,.cb p{margin-left:auto;margin-right:auto}
+}
+
+/* ===== Desktop = mesmos botões do celular, e layout compacto ===== */
+.bl{display:none!important}
+@media(min-width:1100px){
+html{scroll-padding-top:74px}
+.w{width:min(1040px,calc(100% - 48px))}
+.nav{height:64px}
+.logo img{width:44px;height:44px}
+/* Barra de baixo igual à do celular, só que centralizada */
+.tabs{left:max(16px,calc(50% - 280px));right:auto;width:min(560px,calc(100% - 32px));bottom:12px;padding:6px 6px 6px;border:1px solid var(--ln);border-radius:18px}
+.more{left:max(16px,calc(50% - 280px));right:auto;width:min(560px,calc(100% - 32px));bottom:84px}
+.more a{min-height:44px}
+/* Tamanhos */
+h1{font-size:clamp(2.2rem,3.4vw,3.1rem);margin:10px 0 12px}
+h2{font-size:clamp(1.5rem,2.3vw,2rem);margin:8px 0 10px}
+section{padding:44px 0}
+.btn{min-height:44px;padding:0 22px;font-size:.9rem}
+.lead{font-size:.95rem}
+/* Topo */
+.hero{min-height:0;padding:96px 0 56px;align-items:center}
+.hero-c{max-width:520px;margin-left:max(24px,calc((100% - 1040px)/2))}
+.hp{margin-bottom:20px;font-size:.95rem}
+.hero h1{font-size:clamp(2.2rem,3.4vw,3.1rem)}
+/* Serviços */
+.tabela{gap:14px;margin-top:20px}
+.tcol{border-radius:16px}
+.tfoto{aspect-ratio:21/8}
+.tfoto .tt{left:18px;right:18px;bottom:12px}
+.tfoto h3{font-size:1.45rem}
+.tb{padding:2px 18px 16px}
+.tb>ul:last-of-type{margin-bottom:14px}
+.dv{margin:8px 0 0;font-size:.78rem}
+.tcol h4{margin:12px 0 2px}
+.tcol summary{padding:7px 0;font-size:.88rem}
+.tcol summary:after{width:24px;height:24px;font-size:.9rem}
+/* Galeria */
+.seg{margin-top:16px}
+.seg button{min-height:34px;padding:0 16px;font-size:.84rem}
+.gal{gap:14px;margin-top:16px}
+.gal figure{flex:0 1 calc((100% - 28px)/3)}
+figure figcaption{margin-top:8px;font-size:.88rem}
+/* Sobre */
+.sb{gap:28px}
+.ben{gap:10px}
+.ben li{padding:14px}
+.ben .i{margin-bottom:8px}
+/* FAQ */
+.fq{gap:24px}
+summary{padding:13px 0;font-size:.95rem}
+details p{padding-bottom:13px;font-size:.9rem}
+/* Localização */
+.lc{gap:24px}
+.ci{margin:14px 0}
+.ci li{padding:10px 0}
+.map,.map iframe{min-height:260px}
+/* Chamada final */
+.cb{padding:64px 0}
+.cb p{margin-bottom:18px}
+/* Rodapé */
+footer{padding:32px 0 24px}
+.ft{gap:20px}
+.fb img{width:52px;height:52px;margin-bottom:8px}
+.fs a{width:40px;height:40px}
+.cr{margin-top:22px;padding:20px 20px}
+.cr p{margin-bottom:14px}
+.copy{margin-top:18px;padding-top:16px}
+/* Agendamento */
+#agendar.ag-tela .w{width:min(1040px,calc(100% - 48px));padding-top:16px}
+#agendar.ag-tela .panel{padding:20px;column-gap:24px;grid-template-columns:320px minmax(0,1fr)}
+#agendar.ag-tela .acao{padding:16px;top:72px}
+.acao .zinho{gap:10px;margin:0 0 10px}
+.acao .zinho .robo{width:90px;height:81px}
+.acao .zinho .bolha{padding:12px}
+.acao .zinho .fala-t{font-size:1rem}
+.stp{margin-bottom:16px}
+label{margin:12px 0 6px}
+.in{min-height:44px}
+.chip{min-height:48px;padding:8px 12px}
+.cal{padding:10px}
+.cg{gap:5px}
+.cg button{min-height:38px;font-size:.95rem}
+.calh button{width:40px;height:40px;font-size:1.3rem}
+.hb,.mb{min-height:46px;font-size:1.05rem}
+.hgrid,.mgrid{gap:8px}
+.hres{margin:10px 0 2px;font-size:1.05rem}
+.endc{margin-top:14px;padding:14px}
+.acao .nv .btn{min-height:44px}
+.sem-zinho #agendar.ag-tela .panel{width:100%;max-width:720px;padding:20px}
+}
+
+/* Créditos discretos, privacidade e pagamento */
+.cred{margin-top:8px;text-align:center;font-size:.78rem;color:var(--mt)}
+.cred a,.cred .lnk{color:var(--tx);font-weight:600}
+.cred a:hover,.cred .lnk:hover{color:var(--cy)}
+.lnk{padding:0;border:0;background:none;cursor:pointer;font-size:inherit;text-decoration:underline;text-underline-offset:3px}
+.priv{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:.8rem;line-height:1.45;color:var(--mt)}
+.priv .i{width:16px;height:16px;margin-top:1px;color:var(--cy)}
+.pay{margin-top:16px;padding:14px 16px;border:1px solid var(--ln);border-radius:14px;background:var(--bg)}
+.pay .eb{margin-bottom:8px}
+.pays{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.pays li{padding:6px 12px;border:1px solid var(--ln);border-radius:999px;font-size:.84rem;font-weight:600;background:#087BFF14}
+.pn{margin-top:10px;font-size:.8rem;color:var(--mt)}
+.pgt{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pgt button{min-height:46px;padding:0 10px;border:1px solid var(--ln);border-radius:12px;background:var(--bg);font-weight:600;font-size:.9rem;cursor:pointer;transition:.2s}
+.pgt button:hover{border-color:var(--cy)}
+.pgt button[aria-pressed=true]{border-color:var(--cy);background:#087BFF33;box-shadow:inset 0 0 0 1px var(--cy)}
+@media(min-width:620px){.pgt{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-car" viewBox="0 0 24 24"><path d="M4 15l2-6h12l2 6v4H4z"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/></symbol>
+<symbol id="i-moto" viewBox="0 0 24 24"><circle cx="6" cy="16" r="3"/><circle cx="18" cy="16" r="3"/><path d="M6 16l3-6h5l3 6M9 10l2 6h4"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+<symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 4h12l3 5-9 11L3 9zM3 9h18M9 4l3 16 3-16"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 006 6L16 14l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+<symbol id="i-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9h-6v-6H9v6H3z"/></symbol>
+<symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 16l5-5 4 4 3-3 6 6"/></symbol>
+<symbol id="i-spark-off" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/><path d="M4 4l16 16"/></symbol>
+<symbol id="i-mobile" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></symbol>
+<symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.7" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+<header id="hd"><div class="w nav">
+<a class="logo" href="#inicio" aria-label="STETICA 018, início"><img src="img/logo.webp" alt="Logo STETICA 018" width="52" height="52"></a>
+<div class="hr"><button class="burger" id="bg" type="button" aria-label="Animações" aria-pressed="false"><svg class="i"><use href="#i-spark-off"/></svg><span class="bl"></span></button></div>
+</div></header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="hero-bg"><img src="img/hero.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="BMW e moto pretas em garagem de estética com luzes de LED azul" onerror="this.remove()"></div>
+<div class="w hero-c">
+<p class="eb">Lavagem detalhada · Carro e moto</p>
+<h1>Seu veículo sempre <em>como novo!</em></h1>
+<p class="hp">Lavagem detalhada de carro e moto, com produtos de qualidade e atenção a cada detalhe. Escolha o serviço e o horário e envie para a equipe.</p>
+<div class="acts"><a class="btn p" href="#agendar">Agendar Serviço <svg class="i"><use href="#i-arr"/></svg></a><a class="btn" href="#servicos">Ver serviços e preços</a></div>
+</div>
+</section>
+
+<section id="servicos" class="alt"><div class="w">
+<p class="eb">Nossos serviços</p>
+<h2>Tudo o que seu veículo precisa <em>em um só lugar</em></h2>
+<p class="lead">Lavagens e serviços extras para carros e motos. Escolha o serviço e monte seu agendamento aqui no site.</p>
+<div class="tabela" id="tabela"></div>
+</div></section>
+
+<section id="galeria"><div class="w">
+<p class="eb">Galeria de trabalhos</p>
+<h2>Antes e depois dos nossos trabalhos</h2>
+<p class="lead">Arraste a barra em cada foto para comparar o antes e o depois.</p>
+<div class="seg" id="gf" role="group" aria-label="Filtrar galeria"><button type="button" aria-pressed="true" data-f="todos">Todos</button><button type="button" aria-pressed="false" data-f="carro">Carros</button><button type="button" aria-pressed="false" data-f="moto">Motos</button></div>
+<div class="gal" id="gal"></div>
+</div></section>
+
+<section id="sobre" class="alt"><div class="w sb">
+<div>
+<p class="eb">Sobre a STETICA 018</p>
+<h2>Mais que estética, <em>é cuidado e proteção!</em></h2>
+<p class="lead">Cuidar de um veículo envolve atenção, técnica e acabamento. Na STETICA 018, carros e motos recebem lavagem detalhada, com foco no resultado que você vê e sente.</p>
+</div>
+<ul class="ben">
+<li><svg class="i"><use href="#i-user"/></svg><b>Profissionais qualificados</b><span>Atenção, técnica e acabamento em cada serviço.</span></li>
+<li><svg class="i"><use href="#i-gem"/></svg><b>Produtos de alta qualidade</b><span>Produtos e técnicas do mercado para brilho e proteção.</span></li>
+<li><svg class="i"><use href="#i-spark"/></svg><b>Ambiente limpo e moderno</b><span>Um espaço organizado para cuidar do seu veículo.</span></li>
+<li><svg class="i"><use href="#i-phone"/></svg><b>Atendimento personalizado</b><span>Tire suas dúvidas com a equipe antes de agendar.</span></li>
+</ul>
+</div></section>
+
+<section id="agendar"><div class="ag-topo"><button type="button" class="bsite" id="agFechar"><span class="bs-i"><svg class="i"><use href="#i-arr"/></svg></span>Voltar ao site</button><div class="ag-dir"><b>Agendamento</b><button type="button" class="agz" id="agZ"></button></div></div><div class="w">
+<p class="eb">Agendamento online</p>
+<h2>Agende seu serviço</h2>
+<p class="lead">Escolha o serviço, a data e o horário aqui no site. Depois, envie o agendamento para a equipe, que confirma o horário.</p>
+<div class="bk">
+<div class="panel">
+<ol class="stp" id="stp"><li class="on"><span>1</span>Serviço</li><li><span>2</span>Data e horário</li><li><span>3</span>Seus dados</li></ol>
+<div id="fm">
+<div data-s="0">
+<label>Tipo de veículo</label>
+<div class="vt" id="vt" role="group" aria-label="Tipo de veículo"><button type="button" data-v="carro" aria-pressed="true">Carro</button><button type="button" data-v="moto" aria-pressed="false">Moto</button></div>
+<label>Serviço principal</label>
+<div class="chips" id="lvc"></div>
+<label>Serviços extras (opcional)</label>
+<div class="chips" id="ex"></div>
+</div>
+<div data-s="1" hidden>
+<label>Escolha a data</label>
+<div class="cal" id="cal"></div>
+<label>Escolha a hora</label>
+<div class="hgrid" id="hh" role="group" aria-label="Escolha a hora"></div>
+<label>Escolha os minutos</label>
+<div class="mgrid" id="mm" role="group" aria-label="Escolha os minutos"></div>
+<p class="hres" id="hres" aria-live="polite"></p>
+<p class="note">Atendemos de segunda a sábado, das 07:00 às 18:00. Aos domingos não há atendimento.</p>
+</div>
+<div data-s="2" hidden>
+<label for="nm">Nome *</label>
+<input id="nm" class="in" autocomplete="name">
+<div class="g2">
+<div><label for="mo">Modelo do veículo (opcional)</label><input id="mo" class="in" placeholder="Ex.: Honda Civic"></div>
+<div><label for="pl">Placa (opcional)</label><input id="pl" class="in" placeholder="Ex.: ABC1D23" maxlength="8" autocomplete="off"></div>
+</div>
+<p class="priv"><svg class="i"><use href="#i-lock"/></svg><span>Seu nome, o modelo e a placa são usados só para organizar o agendamento e confirmar o horário com a equipe da STETICA 018.</span></p>
+<div class="endc">
+<p class="eb">Endereço da STETICA 018</p>
+<p class="endt">Rua Tibiriça, 174, Avanhandava - SP</p>
+<a class="endl" id="endm" target="_blank" rel="noopener">Ver no Google Maps <svg class="i"><use href="#i-arr"/></svg></a>
+<label class="ck"><input type="checkbox" id="ciente"><span>Estou ciente de onde fica a STETICA 018 e confirmo este endereço.</span></label>
+</div>
+<div class="pay"><p class="eb" id="pgl">Forma de pagamento *</p><div class="pgt" id="pgt" role="group" aria-labelledby="pgl"><button type="button" data-p="Pix" aria-pressed="false">Pix</button><button type="button" data-p="Cartão de crédito" aria-pressed="false">Cartão de crédito</button><button type="button" data-p="Cartão de débito" aria-pressed="false">Cartão de débito</button><button type="button" data-p="Dinheiro" aria-pressed="false">Dinheiro</button></div><p class="pn">Escolha como pretende pagar. O pagamento não é feito pelo site: é feito somente presencialmente, na STETICA 018, no dia do serviço.</p></div>
+</div>
+</div>
+<div id="ok" class="ok" hidden>
+<div class="okc"><svg class="i"><use href="#i-check"/></svg></div>
+<h3 id="okt">Agendamento realizado!</h3>
+<p class="lead" id="oklead" style="margin:10px auto 0">A mensagem já traz todos os detalhes e o endereço. Envie pelo WhatsApp para a equipe confirmar o horário.</p>
+<ul class="sum" id="osum"></ul>
+<p class="lead" style="margin:18px auto 4px">Envie o agendamento para a equipe:</p>
+
+<a class="btn p wa" id="okwa" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+<div class="okb">
+<button class="btn" id="volt" type="button">Voltar e editar</button>
+<button class="btn" id="home" type="button">Novo agendamento</button>
+</div>
+</div>
+<div class="acao">
+<p class="aviso-zinho">Modo manual ativado. Use os botões Voltar e Próximo abaixo para continuar.</p>
+<div class="zinho"><div class="zw"><svg class="robo" viewBox="0 0 80 72" aria-hidden="true"><line x1="40" y1="7" x2="40" y2="14" stroke="#00D9FF" stroke-width="2"/><circle class="antena" cx="40" cy="5" r="3.5" fill="#00D9FF"/><rect x="10" y="14" width="60" height="32" rx="12" fill="#0F1A2C" stroke="#087BFF" stroke-width="2"/><rect x="20" y="20" width="40" height="14" rx="7" fill="#00D9FF26" stroke="#00D9FF" stroke-width="1.5"/><circle class="olho" cx="31" cy="27" r="3.5" fill="#00D9FF"/><circle class="olho" cx="49" cy="27" r="3.5" fill="#00D9FF"/><rect class="boca" x="34" y="38" width="12" height="3" rx="1.5" fill="#00D9FF"/><rect x="3" y="26" width="6" height="8" rx="2" fill="#F5F8FF"/><rect x="71" y="26" width="6" height="8" rx="2" fill="#F5F8FF"/><circle cx="24" cy="54" r="8" fill="#05070B" stroke="#087BFF" stroke-width="2"/><circle cx="56" cy="54" r="8" fill="#05070B" stroke="#087BFF" stroke-width="2"/><circle cx="24" cy="54" r="3" fill="#00D9FF"/><circle cx="56" cy="54" r="3" fill="#00D9FF"/></svg><span class="nomez">Zinho</span></div><div class="bolha"><div style="flex:1;min-width:0"><p class="fala-t" id="dica" aria-live="polite"></p><p class="fala-f" id="zf"></p></div></div></div>
+<p class="err" id="er" role="alert"></p>
+<div class="nv"><button type="button" class="btn" id="bk">Voltar</button><button type="button" class="btn p" id="nx">Próximo <svg class="i"><use href="#i-arr"/></svg></button></div>
+</div>
+<div class="acao-vaga" aria-hidden="true"></div>
+</div>
+</div>
+</div></section>
+
+<section id="faq" class="alt"><div class="w fq">
+<div>
+<p class="eb">Dúvidas</p>
+<h2>Perguntas Frequentes</h2>
+<p class="lead">Tire suas dúvidas sobre serviços, produtos, valores e agendamento.</p>
+</div>
+<div>
+<details><summary>Quanto tempo leva um serviço?</summary><p>A duração depende do serviço escolhido e do estado do veículo. A equipe informa a estimativa ao confirmar o seu horário.</p></details>
+<details><summary>Quais produtos vocês utilizam?</summary><p>Trabalhamos com produtos de alta qualidade e técnicas do mercado, para garantir brilho, proteção e conservação. Se tiver alguma preferência, comente com a equipe.</p></details>
+<details><summary>Como são calculados os valores?</summary><p>Os valores seguem a tabela de serviços da STETICA 018. Carro e moto têm preços próprios, e os extras são somados à lavagem.</p></details>
+<details><summary>Como funciona o agendamento?</summary><p>Escolha o tipo de veículo, o serviço, a data e o horário, e preencha seus dados. Ao finalizar, você envia o agendamento pelo WhatsApp, e a equipe confirma o horário.</p></details>
+<details><summary>Qual é o horário de atendimento?</summary><p>Atendemos de segunda a sábado, das 07:00 às 18:00. Aos domingos a STETICA 018 não funciona.</p></details>
+<details><summary>Quais são as formas de pagamento?</summary><p>Aceitamos Pix, cartão de crédito, cartão de débito e dinheiro. Você escolhe a forma ao agendar, mas o pagamento é feito somente presencialmente, na STETICA 018. Não cobramos nada pelo site.</p></details>
+<details><summary>Vocês atendem carros e motos?</summary><p>Sim. Atendemos carros e motos, com serviços específicos para cada tipo de veículo.</p></details>
+</div>
+</div></section>
+
+<section id="localizacao"><div class="w lc">
+<div>
+<p class="eb">Localização e contato</p>
+<h2>Onde estamos</h2>
+<ul class="ci">
+<li><svg class="i"><use href="#i-pin"/></svg><div><b>Endereço</b><span>Rua Tibiriça, 174<br>Avanhandava, SP</span></div></li>
+<li><svg class="i"><use href="#i-phone"/></svg><div><b>Telefone e WhatsApp</b><a href="tel:+5518991860174">(18) 99186-0174</a></div></li>
+<li><svg class="i"><use href="#i-ig"/></svg><div><b>Instagram</b><a href="https://instagram.com/stetica_018" target="_blank" rel="noopener">@stetica_018</a></div></li>
+<li><svg class="i"><use href="#i-clock"/></svg><div><b>Horário de atendimento</b><span>Segunda a sábado, 07:00 às 18:00</span><small>Domingo: fechado</small><small id="stt"></small><small>Todo agendamento é confirmado pela equipe</small></div></li>
+</ul>
+<a class="btn p" id="mp" target="_blank" rel="noopener">Ver no Google Maps <svg class="i"><use href="#i-arr"/></svg></a>
+</div>
+<div class="map"><iframe id="mf" title="Mapa da STETICA 018" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div></section>
+
+<section class="cb"><img src="img/final.webp" loading="lazy" decoding="async" width="1400" height="787" alt="BMW e moto pretas em rampa de garagem com luzes de LED azul" onerror="this.remove()"><div class="w">
+<h2>Pronto para dar o melhor cuidado para o seu veículo?</h2>
+<p>Agende agora e garanta um serviço de qualidade, com toda a nossa dedicação.</p>
+<a class="btn p" href="#agendar">Agendar Serviço <svg class="i"><use href="#i-arr"/></svg></a>
+</div></section>
+</main>
+
+<footer><div class="w ft">
+<div class="fb"><img src="img/logo.webp" loading="lazy" alt="" width="64" height="64"><p>Mais que estética,<br>é cuidado e proteção!</p></div>
+<nav class="fl" aria-label="Rodapé"><b>Navegação rápida</b><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#agendar">Agendar</a><a href="#localizacao">Localização</a><a href="#faq">Perguntas Frequentes</a></nav>
+<div class="fs"><b>Redes sociais</b><div><a href="https://instagram.com/stetica_018" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-ig"/></svg></a><a href="https://wa.me/5518991860174" target="_blank" rel="noopener" aria-label="WhatsApp de contato"><svg class="i"><use href="#i-chat"/></svg></a></div></div>
+</div>
+
+<p class="copy">© <span id="yr"></span> STETICA 018. Todos os direitos reservados.</p>
+<p class="cred">Site criado por <a href="https://www.instagram.com/l.melo04/" target="_blank" rel="noopener">@l.melo04</a> · <button type="button" class="lnk" id="crw">Quer um site? Fale comigo</button></p>
+</footer>
+
+<div id="mais" class="more" hidden><a href="#sobre">Sobre<span>›</span></a><a href="#localizacao">Localização<span>›</span></a><a href="#faq">Perguntas Frequentes<span>›</span></a></div>
+<nav class="tabs" aria-label="Navegação rápida">
+<a href="#inicio"><svg class="i"><use href="#i-home"/></svg>Início</a>
+<a href="#servicos"><svg class="i"><use href="#i-car"/></svg>Serviços</a>
+<a href="#galeria"><svg class="i"><use href="#i-img"/></svg>Galeria</a>
+<a href="#agendar"><svg class="i"><use href="#i-cal"/></svg>Agendar</a>
+<button id="mb" type="button" aria-expanded="false" aria-controls="mais"><svg class="i"><use href="#i-more"/></svg>Mais</button>
+</nav>
+
+<script>
+(function(){
+document.documentElement.classList.add('sem-zinho');
+const FT={"farol-antes":"img/farol-antes.webp","farol-depois":"img/farol-depois.webp","interior-antes":"img/interior-antes.webp","interior-depois":"img/interior-depois.webp","lavagem-antes":"img/lavagem-antes.webp","lavagem-depois":"img/lavagem-depois.webp","motor-antes":"img/motor-antes.webp","motor-depois":"img/motor-depois.webp","tanque-antes":"img/tanque-antes.webp","tanque-depois":"img/tanque-depois.webp"};
+const FS={carro:"img/servico-carro.webp",moto:"img/servico-moto.webp"};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// Cole aqui a URL que recebe os agendamentos (webhook, planilha ou sua API). Vazio = só mostra a confirmação.
+const API='';
+const ADDR='Rua Tibiriça, 174, Avanhandava - SP';
+const BRL=n=>'R$ '+n.toFixed(2).replace('.',',');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+const iso=d=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+const dfmt=s=>s.split('-').reverse().join('/');
+// Data e hora de Brasília: o horário do site não depende do fuso do aparelho de quem visita
+const FMT_SP=new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+function agoraSP(){const p={};FMT_SP.formatToParts(new Date()).forEach(x=>p[x.type]=x.value);return{d:p.year+'-'+p.month+'-'+p.day,min:(+p.hour)*60+(+p.minute)}}
+// Preços e serviços da tabela STETICA 018 (valor em reais)
+const P={carro:{lav:[['Lavagem simples',70],['Lavagem detalhada',85],['Lavagem completa',110]],ex:[['Higienização interna',30],['Higienização de portas',25],['Revitalização de plásticos internos',20],['Remoção de riscos superficiais',20],['Higienização de carpete',70],['Higienização de teto',80],['Higienização de bancos',100],['Clareamento de faróis',180]]},
+moto:{lav:[['Lavagem simples',50],['Lavagem detalhada',70],['Lavagem completa',90]],ex:[['Lavagem interna da moto',20],['Pintura de escapamento',15],['Polimento de tanque',20],['Verniz no motor',10],['Clareamento de farol',10],['Clareamento de roda raiada',20],['Enceramento',5]]}};
+// Galeria: [tipo, título, prefixo dos arquivos fotos/<prefixo>-antes.webp e -depois.webp]
+const GAL=[['carro','Farol: antes e depois','farol'],['carro','Interior do carro','interior'],['carro','Lavagem externa do carro','lavagem'],['moto','Motor da moto','motor'],['moto','Tanque da moto: polimento','tanque']];
+const HJ=agoraSP().d.split('-').map(Number);
+const hoje=new Date(HJ[0],HJ[1]-1,HJ[2]);
+let mes=new Date(hoje.getFullYear(),hoje.getMonth(),1);
+const HORAS=[7,8,9,10,11,12,13,14,15,16,17],MINS=[0,15,30,45];
+// Atendimento de segunda a sábado, das 07:00 às 18:00 (domingo fechado). Último horário de início: 17:45, para o serviço caber antes de fechar.
+const ABRE=7*60,FECHA=18*60,ULT_INI=FECHA-15;
+function livre(h,m){const t=h*60+m;if(t<ABRE||t>ULT_INI)return false;const a=agoraSP();if(S.d===a.d&&t<=a.min)return false;return true}
+function hora(){
+ if(S.h&&!livre(+S.h.slice(0,2),+S.h.slice(3)))S.h='';
+ if(!S.h)S.mOk=false;
+ const semData=!S.d,hh=S.h?+S.h.slice(0,2):-1,mi=S.h&&S.mOk?+S.h.slice(3):-1;
+ $('#hh').innerHTML=HORAS.map(h=>{const ok=!semData&&MINS.some(m=>livre(h,m));return `<button type="button" class="hb" data-h="${String(h).padStart(2,'0')}" aria-pressed="${h===hh}"${ok?'':' disabled'}>${String(h).padStart(2,'0')}</button>`}).join('');
+ $('#mm').innerHTML=MINS.map(m=>{const ok=hh>=0&&livre(hh,m);return `<button type="button" class="mb" data-m="${String(m).padStart(2,'0')}" aria-pressed="${m===mi}"${ok?'':' disabled'}>${String(m).padStart(2,'0')}</button>`}).join('');
+ $('#hres').textContent=S.h?(S.mOk?'Horário escolhido: '+S.h:'Hora escolhida: '+S.h.slice(0,2)+'. Agora escolha os minutos.'):(semData?'Escolha a data primeiro.':'Escolha a hora.');
+ dica();
+}
+$('#hh').onclick=e=>{const b=e.target.closest('button[data-h]');if(!b||b.disabled)return;const h=+b.dataset.h,mins=MINS.filter(x=>livre(h,x));S.h=String(h).padStart(2,'0')+':'+String(mins[0]).padStart(2,'0');S.mOk=false;hora();};
+$('#mm').onclick=e=>{const b=e.target.closest('button[data-m]');if(!b||b.disabled||!S.h)return;S.h=S.h.slice(0,2)+':'+b.dataset.m;S.mOk=true;hora();};
+const S={v:'',lv:-1,ex:[],d:'',h:'',mOk:false,step:0,c:{},pg:''};
+let AN=true;
+try{const v=localStorage.getItem('stetica-anim-v3');if(v!==null)AN=v==='1'}catch(e){}
+const AB=()=>AN?'smooth':'auto';
+function hint(el){el.classList.add('hint');[[0,30],[700,72],[1400,50]].forEach(([t,v])=>setTimeout(()=>{if(AN)el.style.setProperty('--p',v+'%')},t));setTimeout(()=>el.classList.remove('hint'),2000)}
+const IO=('IntersectionObserver' in window)?new IntersectionObserver(es=>es.forEach(e=>{const el=e.target;if(e.isIntersecting){if(AN&&!el._t)el._t=setInterval(()=>{if(AN&&!el.dataset.t)hint(el)},9000);if(AN&&!el.dataset.h){el.dataset.h=1;hint(el)}}else if(el._t){clearInterval(el._t);el._t=0}}),{threshold:.6}):null;
+function paint(){document.documentElement.classList.toggle('anim',AN);const b=$('#bg');b.setAttribute('aria-pressed',String(AN));b.title=AN?'Animações ligadas':'Animações desligadas';b.querySelector('.bl').textContent=AN?'Animações: ligadas':'Animações: desligadas';b.querySelector('use').setAttribute('href',AN?'#i-spark':'#i-spark-off');if(AN)fxStart();else $$('#gal .ba').forEach(el=>{clearInterval(el._t);el._t=0});revealSync()}
+
+function gal(f){
+ $$('#gal .ba').forEach(el=>clearInterval(el._t));
+ $('#gal').innerHTML=GAL.filter(g=>f==='todos'||g[0]===f).map(g=>`<figure><div class="ba" style="--p:50%"><img class="b" src="${FT[g[2]+'-depois']}" alt="Depois: ${g[1]}" loading="lazy"><img class="a" src="${FT[g[2]+'-antes']}" alt="Antes: ${g[1]}" loading="lazy"><span class="tg l">Antes</span><span class="tg r">Depois</span><span class="ln"></span><span class="kn"></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois: ${g[1]}"></div><figcaption>${g[1]}</figcaption></figure>`).join('');
+ if(IO)$$('#gal .ba').forEach(el=>IO.observe(el));
+}
+const INFO=new Set();
+const DESC={
+carro:{
+lav:['Lavagem externa básica do carro, com shampoo automotivo e secagem.','Lavagem externa mais cuidadosa, com atenção a rodas, caixas de roda, frestas e detalhes da carroceria.','Lavagem completa por fora e por dentro: carroceria, rodas e limpeza do interior.'],
+ex:['Limpeza e higienização geral do interior do carro, removendo sujeira e odores.','Limpeza e higienização das portas, incluindo forros e partes internas.','Renova o aspecto dos plásticos internos, devolvendo cor e acabamento.','Remove riscos leves da pintura, que ficam só na camada de cima, com polimento.','Limpeza profunda do carpete, tirando manchas e sujeira acumulada.','Limpeza e higienização do forro do teto, removendo manchas e sujeira.','Limpeza profunda dos bancos, removendo manchas, sujeira e odores.','Recupera faróis amarelados ou opacos, devolvendo a transparência.']},
+moto:{
+lav:['Lavagem externa básica da moto, com shampoo e secagem.','Lavagem mais cuidadosa, com atenção a rodas, motor, corrente e detalhes da carenagem.','Lavagem completa da moto, com limpeza detalhada de todas as partes.'],
+ex:['Limpeza das partes internas e de áreas de difícil acesso da moto.','Renova a pintura do escapamento, cobrindo desgaste e marcas do tempo.','Polimento do tanque, removendo marcas leves e devolvendo o brilho.','Aplicação de verniz no motor para proteger e realçar o acabamento.','Recupera o farol amarelado ou opaco, devolvendo a transparência.','Clareamento e limpeza das rodas raiadas, devolvendo o aspecto de novas.','Aplicação de cera na pintura para dar brilho e proteção.']}};
+const cw=(k,i,x,on,pr)=>{const key=k+i,open=INFO.has(key);return `<div class="cw"><button type="button" class="chip" data-${k}="${i}" aria-pressed="${on}">${x[0]}<small>${pr}</small></button><button type="button" class="inf" data-i="${key}" aria-expanded="${open}" aria-label="O que é: ${x[0]}">!</button>${open?`<p class="dsc">${DESC[S.v][k==='l'?'lav':'ex'][i]}</p>`:''}</div>`};
+const info=key=>{INFO.has(key)?INFO.delete(key):INFO.add(key);s1()};
+function s1(){
+ $$('#vt button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===S.v));
+ const L=S.v?P[S.v].lav:[],E=S.v?P[S.v].ex:[];
+ $('#lvc').innerHTML=S.v?L.map((x,i)=>cw('l',i,x,S.lv===i,BRL(x[1]))).join(''):'<p class="note" style="margin:0">Escolha primeiro o veículo.</p>';
+ $('#ex').innerHTML=E.map((x,i)=>cw('e',i,x,S.ex.includes(i),'+ '+BRL(x[1]))).join('');
+ dica();
+}
+function cal(){
+ const y=mes.getFullYear(),m=mes.getMonth(),n=new Date(y,m+1,0).getDate();
+ let h=`<div class="calh"><button type="button" data-m="-1" aria-label="Mês anterior">‹</button><span>${mes.toLocaleDateString('pt-BR',{month:'long',year:'numeric'})}</span><button type="button" data-m="1" aria-label="Próximo mês">›</button></div><div class="cg">${'DSTQQSS'.split('').map(c=>`<i>${c}</i>`).join('')}`;
+ for(let i=0;i<mes.getDay();i++)h+='<span></span>';
+ for(let d=1;d<=n;d++){const dt=new Date(y,m,d),k=iso(dt);h+=`<button type="button" data-d="${k}"${dt<hoje||dt.getDay()===0||(k===agoraSP().d&&agoraSP().min>=ULT_INI)?' disabled':''}${k===S.d?' class="on"':''}>${d}</button>`}
+ $('#cal').innerHTML=h+'</div>';
+}
+const tot=()=>(S.lv>=0?P[S.v].lav[S.lv][1]:0)+S.ex.reduce((a,i)=>a+P[S.v].ex[i][1],0);
+function rows(){
+ const li=(a,b)=>`<li><span>${a}</span><b>${esc(b)}</b></li>`;
+ return li('Veículo',S.v?(S.v==='carro'?'Carro':'Moto'):'A escolher')+li('Serviço',P[S.v].lav[S.lv][0])+li('Extras',S.ex.map(i=>P[S.v].ex[i][0]).join(', ')||'Nenhum')+li('Data e horário',S.d?dfmt(S.d)+(S.h?' às '+S.h:''):'A escolher');
+}
+const WA='5518991860174';
+function faltas(){return [!S.v&&'veículo',S.lv<0&&'serviço',!S.d&&'data',!S.h&&'horário'].filter(Boolean)}
+// Data por extenso, ex.: "Segunda-feira, 12/10/2026"
+function dataExt(s){const [y,m,d]=s.split('-').map(Number),w=new Date(y,m-1,d).toLocaleDateString('pt-BR',{weekday:'long'});return w.charAt(0).toUpperCase()+w.slice(1)+', '+dfmt(s)}
+// Mensagem completa para enviar pelo WhatsApp
+function txtAg(){
+  const c=S.c||{},p=P[S.v],ex=S.ex.map(i=>p.ex[i]),
+    L=['Olá! Quero agendar um serviço na STETICA 018.','','CLIENTE','Nome: '+c.nm,'','VEÍCULO','Tipo: '+(S.v==='carro'?'Carro':'Moto')];
+  if(c.mo)L.push('Modelo: '+c.mo);
+  if(c.pl)L.push('Placa: '+c.pl.toUpperCase());
+  L.push('','SERVIÇO','Principal: '+p.lav[S.lv][0]+' ('+BRL(p.lav[S.lv][1])+')');
+  if(ex.length){L.push('Extras:');ex.forEach(x=>L.push('- '+x[0]+' ('+BRL(x[1])+')'))}
+  else L.push('Extras: nenhum');
+  L.push('','DATA E HORÁRIO',dataExt(S.d)+' às '+S.h);
+  L.push('','VALOR','Total: '+BRL(tot()));
+  L.push('','PAGAMENTO','Forma escolhida: '+c.pg,'Pagamento somente presencial, na STETICA 018.');
+  L.push('','LOCAL','STETICA 018 – '+ADDR,'Mapa: https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(ADDR));
+  L.push('','Estou ciente de onde fica a STETICA 018 e confirmo este endereço.','','Aguardo a confirmação do horário. Obrigado!');
+  return L.join('\n');
+}
+function waUrl(){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(txtAg())}
+// Zinho: o guia do agendamento. Mostra, passo a passo, o que fazer e onde tocar.
+const ZI={chave:'',alvoAnt:'',toque:false,lado:'baixo'};
+// Destaca na tela o que deve ser tocado agora
+function destacar(sels){
+  $$('.zinho-alvo').forEach(e=>e.classList.remove('zinho-alvo'));
+  (sels||[]).forEach(q=>{const e=$(q);if(e)e.classList.add('zinho-alvo')});
+}
+// Espaço da tela: a barra do Zinho fica embaixo ou em cima, sempre no lado livre, sem cobrir o que a pessoa precisa tocar
+function agendaAberta(){return document.documentElement.classList.contains('ag-on')}
+function rolagemY(){return agendaAberta()?$('#agendar').scrollTop:scrollY}
+function rolarBy(dy,beh){if(agendaAberta())$('#agendar').scrollBy({top:dy,behavior:beh});else window.scrollBy({top:dy,behavior:beh})}
+function areaTela(){const mob=innerWidth<1100,aberta=agendaAberta();return {topo:aberta?68:84,base:innerHeight-(mob&&!aberta?80:16)}}
+function alvosFora(){return (ZI.alvos||[]).map(q=>$(q)).filter(e=>e&&!e.closest('.acao'))}
+function sobreposto(r,lo,hi){return Math.max(0,Math.min(r.bottom,hi)-Math.max(r.top,lo))}
+function posicionarZinho(){
+  if(document.documentElement.classList.contains('sem-zinho'))return 'baixo';
+  const ac=$('.acao'),vaga=$('.acao-vaga');
+  if(!ac||ac.classList.contains('zi-off')){if(vaga)vaga.style.height='0px';return 'baixo'}
+  if(innerWidth>=1100){['left','width','top','bottom'].forEach(p=>ac.style[p]='');if(vaga)vaga.style.height='0px';return 'baixo'}
+  const pn=$('.panel');if(pn){const pr=pn.getBoundingClientRect();ac.style.left=pr.left+'px';ac.style.width=pr.width+'px'}
+  const a=areaTela(),zh=ac.offsetHeight;
+  const els=alvosFora();
+  // Só troca de lado se o outro for bem melhor (evita a barra ficar pulando ao rolar)
+  if(els.length){
+    let oc=0,ob=0;
+    els.forEach(e=>{const r=e.getBoundingClientRect();oc+=sobreposto(r,a.topo,a.topo+zh+8);ob+=sobreposto(r,a.base-zh-8,a.base)});
+    // troca de lado se o outro estiver livre, ou se estiver bem menos coberto
+    if(ZI.lado==='cima'){if(oc>0&&(ob===0||ob+40<oc))ZI.lado='baixo'}
+    else{if(ob>0&&(oc===0||oc+40<ob))ZI.lado='cima'}
+  }
+  const cima=ac.classList.contains('teclado')||ZI.lado==='cima';
+  ac.classList.toggle('topo',cima);
+  ac.style.top=cima?(a.topo+(window.visualViewport?visualViewport.offsetTop:0))+'px':'auto';
+  ac.style.bottom=cima?'auto':(innerHeight-a.base)+'px';
+  // Só reserva espaço embaixo quando a barra está embaixo
+  if(vaga)vaga.style.height=(cima?0:zh)+'px';
+  return cima?'cima':'baixo';
+}
+// Rola até o alvo só o necessário, deixando-o livre da barra do Zinho
+// Espera a rolagem da tela parar (a animação de rolagem muda a posição de tudo)
+function aposRolar(cb){let ult=-1,tent=0;(function ver(){const y=rolagemY();if(y===ult||tent>30){cb();return}ult=y;tent++;setTimeout(ver,50)})()}
+// Teclado do celular: quando um campo de texto está em foco, o Zinho vira uma faixa curta no topo
+const campoTexto=e=>!!(e&&e.matches&&e.matches('input:not([type=checkbox]):not([type=radio]):not([type=range]),textarea,select'));
+let ZIteclado=false,ZItimer=0;
+function setTeclado(on){
+  if(on===ZIteclado)return;
+  ZIteclado=on;
+  const ac=$('.acao');if(ac)ac.classList.toggle('teclado',on);
+  posicionarZinho();
+}
+// Deixa o campo visível logo abaixo da faixa do Zinho e acima do teclado
+function mostrarCampo(el){
+  if(document.activeElement!==el||!el.offsetParent)return;   // só se o campo ainda está em uso e visível
+  const vv=window.visualViewport,altura=vv?vv.height:innerHeight;
+  const ac=$('.acao'),faixa=ac&&ac.classList.contains('teclado')?ac.offsetHeight:0;
+  const topo=(agendaAberta()?68:84)+faixa+8,base=altura-12;
+  const r=el.getBoundingClientRect();
+  if(r.top<topo||r.bottom>base)rolarBy(r.top-(topo+12),'auto');
+}
+document.addEventListener('focusin',e=>{
+  if(!campoTexto(e.target)||innerWidth>=1100)return;
+  clearTimeout(ZItimer);setTeclado(true);
+  setTimeout(()=>mostrarCampo(e.target),350);setTimeout(zinhoVerifica,800);
+});
+document.addEventListener('focusout',()=>{
+  clearTimeout(ZItimer);
+  ZItimer=setTimeout(()=>{if(!campoTexto(document.activeElement))setTeclado(false)},250);
+});
+if(window.visualViewport)visualViewport.addEventListener('resize',()=>{
+  const vv=visualViewport;
+  if(campoTexto(document.activeElement)&&innerWidth<1100&&vv.height<innerHeight*.8)setTeclado(true);
+});
+// Vigia: se o Zinho sair da tela, cobrir o campo ou ficar grande demais com o teclado, liga o modo manual na hora
+function zinhoVerifica(){
+  const ac=$('.acao');
+  if(!agendaAberta()||!ac||innerWidth>=1100||document.documentElement.classList.contains('sem-zinho')||ac.classList.contains('zi-off'))return;
+  const vv=window.visualViewport,top=vv?vv.offsetTop:0,bot=vv?vv.offsetTop+vv.height:innerHeight;
+  const r=ac.getBoundingClientRect();if(!r.height)return;
+  let ruim=r.bottom<top+4||r.top>bot-4||r.height>(bot-top)*.45;
+  const f=document.activeElement;
+  if(!ruim&&campoTexto(f)){const q=f.getBoundingClientRect();ruim=Math.min(r.bottom,q.bottom)-Math.max(r.top,q.top)>6}
+  if(ruim)zinhoFalhou('layout');
+}
+if(window.visualViewport){let vt=0;const vv2=()=>{clearTimeout(vt);vt=setTimeout(()=>{posicionarZinho();zinhoVerifica()},450)};visualViewport.addEventListener('resize',vv2);visualViewport.addEventListener('scroll',vv2)}
+function mostrar(el){
+  if(!ZI.toque||ZI.quieto||ZIteclado||!el||el.closest('.acao'))return;
+  posicionarZinho();
+  const r=el.getBoundingClientRect();if(!r.width&&!r.height)return;
+  const a=areaTela(),ac=$('.acao'),zh=ac?ac.offsetHeight:0;
+  const cima=ZI.lado==='cima';
+  const lo=cima?a.topo+zh+8:a.topo, hi=cima?a.base:a.base-zh-8;
+  const folga=12;
+  let dy=0;
+  if(r.height>hi-lo) dy=r.top-(lo+folga);              // maior que a área livre: mostra o começo dele
+  else if(r.top<lo||r.bottom>hi) dy=r.top-(lo+folga);  // fora da área livre: leva para o topo livre
+  if(dy)rolarBy(dy,AB());
+  setTimeout(()=>posicionarZinho(),400);
+}
+// c = o que fazer agora (balão fixo), f = explicação do passo (texto acima dos campos), alvos = onde tocar
+function zinhoDiz(c,f,alvos){
+  ZI.alvos=alvos||[];
+  $$('.zinho .fala-t').forEach(e=>e.textContent=c);
+  const zf=$('#zf');if(zf)zf.textContent=f||'';
+  destacar(alvos);
+  const chave=(alvos||[]).join(',');
+  if(chave!==ZI.alvoAnt){ZI.alvoAnt=chave;const p=alvos&&alvos[0]&&$(alvos[0]);if(p)setTimeout(()=>aposRolar(()=>mostrar(p)),150)}
+}
+document.addEventListener('pointerdown',()=>{ZI.toque=true},{once:true,capture:true});
+let ZIfila=0;addEventListener('scroll',()=>{if(!ZIfila)ZIfila=requestAnimationFrame(()=>{ZIfila=0;posicionarZinho()})},{passive:true});
+addEventListener('resize',()=>posicionarZinho());
+if('IntersectionObserver' in window)new IntersectionObserver(es=>es.forEach(e=>{const ac=$('.acao');if(ac)ac.classList.toggle('zi-off',!e.isIntersecting);posicionarZinho()})).observe($('.panel'));
+// Explicação de cada passo, do começo ao fim
+function dica(){
+  const nx=$('#nx');if(!nx)return;
+  const ac=$('.acao');if(ac)ac.classList.remove('final');
+  let c,f,alvos=[],pronto=false;
+  if(S.step===0){
+    if(!S.v){
+      c='Oi, eu sou o Zinho! Toque em Carro ou Moto.';
+      f='Oi, eu sou o Zinho, e vou te ensinar a agendar passo a passo. Primeiro, toque no botão Carro ou no botão Moto, logo abaixo deste texto.';
+      alvos=['#vt'];
+    }else if(S.lv<0){
+      const v=S.v==='carro'?'Carro':'Moto';
+      c='Agora escolha o serviço principal, um dos cartões. Ele é obrigatório.';
+      f='Muito bem, você escolheu '+v+'. Agora escolha o serviço principal. Os cartões mostram cada serviço e o preço. Toque em um deles. Esse serviço é obrigatório. Se quiser saber o que ele inclui, toque no botão de exclamação do cartão.';
+      alvos=['#lvc'];
+    }else if(!S.ex.length){
+      c='Serviço escolhido. Total: '+BRL(tot())+'. Você pode escolher um ou mais extras. Se não quiser, toque em Próximo.';
+      f='Serviço escolhido. O total até agora é de '+BRL(tot())+'. Os extras são opcionais, e você pode escolher mais de um. Cada extra soma no total. Se não quiser nenhum, toque no botão Próximo, embaixo à direita.';
+      alvos=[];pronto=false;
+    }else{
+      c='Extras escolhidos. Total: '+BRL(tot())+'. Pode escolher mais extras, ou toque em Próximo.';
+      f='Ótimo, os extras foram adicionados. Você ainda pode escolher mais extras, se quiser. O total fica em '+BRL(tot())+'. Quando estiver pronto, toque no botão Próximo, embaixo à direita.';
+      alvos=[];pronto=false;
+    }
+  }else if(S.step===1){
+    if(!S.d){
+      c='Passo 2 de 3: escolha o dia no calendário.';
+      f='Agora vamos escolher a data. No calendário, toque no dia que você quer. Os dias que já passaram e os domingos (não há atendimento) ficam apagados e não podem ser escolhidos. Para trocar o mês, use as setas do calendário.';
+      alvos=['#cal'];
+    }else if(!S.h){
+      c='Agora escolha a hora. Atendemos de segunda a sábado, das 07:00 às 18:00.';
+      f='Dia escolhido. Agora escolha a hora. Toque em um dos horários. Os horários apagados não estão disponíveis. Atendemos de segunda a sábado, das 07:00 às 18:00.';
+      alvos=['#hh'];
+    }else if(!S.mOk){
+      c='Agora escolha os minutos: 00, 15, 30 ou 45.';
+      f='Hora escolhida: '+S.h.slice(0,2)+' horas. Agora escolha os minutos. Toque em 00, 15, 30 ou 45, logo abaixo das horas. Os minutos apagados já passaram ou não estão disponíveis.';
+      alvos=['#mm'];
+    }else{
+      c='Horário '+S.h+' escolhido. Depois toque em Próximo.';
+      f='Horário escolhido: '+S.h+'. Quando estiver certo, toque no botão Próximo, embaixo à direita.';
+      alvos=['#nx'];pronto=true;
+    }
+  }else{
+    const nm=$('#nm').value.trim(),pl=$('#pl').value.trim().replace(/\W/g,'');
+    const falta=[];
+    if($('#nm').value.trim().length<2)falta.push('seu nome');
+    if(!S.pg)falta.push('a forma de pagamento');
+    if(!$('#ciente').checked)falta.push('marcar a caixa do endereço');
+    if(nm&&!/^[A-Za-zÀ-ÖØ-öø-ÿ'’ -]+$/.test(nm)){
+      c='Use somente letras no nome.';
+      f='Use somente letras no nome: letras e espaço, sem números nem símbolos.';
+      alvos=['#nm'];
+    }else if(pl&&pl.length<7){
+      c='Informe a placa do veículo.';
+      f='Informe a placa do veículo completa, com 7 letras e números. Se não quiser informar, apague o que digitou.';
+      alvos=['#pl'];
+    }else if(falta.length){
+      c='Passo 3 de 3: falta '+falta.join(' e ')+'. Modelo e placa são opcionais.';
+      const partes=[];
+      if(falta.includes('seu nome'))partes.push('Digite seu nome no primeiro campo.');
+      partes.push('Modelo do veículo e placa são opcionais, pode deixar em branco.');
+      if(falta.includes('a forma de pagamento'))partes.push('Escolha a forma de pagamento. Lembre que o pagamento é feito somente na loja.');
+      if(falta.includes('marcar a caixa do endereço'))partes.push('Depois, marque a caixa que confirma o endereço da STETICA 018.');
+      partes.push('Quando terminar, toque em Finalizar agendamento.');
+      f=partes.join(' ');
+      alvos=falta.includes('seu nome')?['#nm']:falta.includes('a forma de pagamento')?['#pgt']:['label.ck'];
+    }else{
+      c='Pronto! Agora toque em Finalizar agendamento.';
+      f='Pronto, seus dados estão certos. Agora toque no botão Finalizar agendamento, embaixo à direita.';
+      alvos=['#nx'];pronto=true;
+    }
+  }
+  nx.classList.toggle('pronto',pronto);
+  // Muda o destaque e rola só quando muda de passo ou de alvo; enquanto digita, só atualiza o texto
+  const chave=S.step+'|'+alvos.join(',');
+  if(chave!==ZI.chave){ZI.chave=chave;zinhoDiz(c,f,alvos)}
+  else{$$('.zinho .fala-t').forEach(e=>e.textContent=c);const zf=$('#zf');if(zf)zf.textContent=f}
+  posicionarZinho();
+}
+// Resumo do agendamento que o Zinho mostra na confirmação: serviços, valores, data, horário e total
+function resumoZinho(){
+  const R=v=>BRL(v).replace(' ','\u00a0');
+  return 'Veja o resumo abaixo, com os valores. Total: '+R(tot())+'. Confira e toque em Enviar pelo WhatsApp.';
+}
+// Tela do agendamento: os botões "Agendar" abrem a tela própria, com o Zinho guiando
+const hst=()=>{try{return history.state&&history.state.ag?history.state:null}catch(e){return null}};
+const hs=()=>!!hst();
+const hpush=()=>{try{const c=hst();history.pushState({ag:1,st:S.step,d:(c?c.d:0)+1},'','#agendar')}catch(e){}};
+const hrep=()=>{try{const c=hst();history.replaceState({ag:1,st:S.step,d:c?c.d:1},'','#agendar')}catch(e){}};
+const hback=()=>{try{history.back()}catch(e){}};
+function abrirAgenda(empurrar){
+  const ag=$('#agendar');if(!ag||agendaAberta())return;
+  ag.classList.add('ag-tela');document.documentElement.classList.add('ag-on');
+  ag.scrollTop=0;
+  if(empurrar&&!hs())hpush();
+  if(typeof dica==='function')dica();
+}
+function fecharAgenda(voltarHistorico){
+  if(!agendaAberta())return;
+  $('#agendar').classList.remove('ag-tela');document.documentElement.classList.remove('ag-on');
+  const c=hst();
+  if(voltarHistorico&&c){try{history.go(-c.d)}catch(e){}}
+  else if(!c&&location.hash==='#agendar'){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
+}
+document.addEventListener('click',e=>{
+  const a=e.target.closest&&e.target.closest('a[href="#agendar"]');
+  if(!a)return;
+  e.preventDefault();abrirAgenda(true);
+});
+window.addEventListener('popstate',()=>{
+  if(!agendaAberta())return;
+  const c=hst();
+  if(!c){fecharAgenda(false);return}
+  if(c.st!==S.step||!$('#ok').hidden){$('#ok').hidden=true;$('#fm').hidden=false;$('#stp').hidden=false;go(c.st);$('.panel').scrollIntoView({behavior:AB(),block:'start'})}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&agendaAberta())fecharAgenda(true)});
+$('#agFechar').onclick=()=>fecharAgenda(true);
+// Se o Zinho der algum erro, o agendamento continua pelos botões da página
+function zLabel(){const b=$('#agZ');if(b)b.textContent=document.documentElement.classList.contains('sem-zinho')?'Ligar o Zinho':'Modo manual'}
+function zinhoFalhou(e){
+  const h=document.documentElement;
+  if(h.classList.contains('sem-zinho'))return;
+  console.warn('Zinho indisponível. Modo manual ativado.',e);
+  h.classList.add('sem-zinho');
+  const ac=$('.acao');
+  if(ac){ac.classList.remove('teclado','topo');['left','width','top','bottom'].forEach(p=>ac.style[p]='')}
+  const v=$('.acao-vaga');if(v)v.style.height='0px';
+  destacar([]);zLabel();
+  setTimeout(()=>{try{ac&&ac.scrollIntoView({block:'nearest',behavior:'smooth'})}catch(_){}},60);
+}
+$('#agZ').onclick=()=>{
+  const h=document.documentElement;
+  if(h.classList.contains('sem-zinho')){h.classList.remove('sem-zinho');ZI.chave='';dica();posicionarZinho();zLabel()}
+  else zinhoFalhou('manual');
+};
+zLabel();
+function zseg(fn){return function(...a){try{return fn.apply(this,a)}catch(e){zinhoFalhou(e);return undefined}}}
+function topo(){if(agendaAberta())$('#agendar').scrollTo({top:0,behavior:'instant'});else window.scrollTo({top:0,behavior:'instant'})}
+function go(n){
+ S.step=n;$('#bk').disabled=n===0;dica();
+ $$('[data-s]').forEach(p=>p.hidden=+p.dataset.s!==n);
+ $$('#stp li').forEach((li,i)=>li.classList.toggle('on',i===n));
+ $('#nx').innerHTML=n===2?'Finalizar agendamento':'Próximo <svg class="i"><use href="#i-arr"/></svg>';
+ $('#er').textContent='';
+ 
+}
+function dados(){
+ const c={nm:$('#nm').value.trim(),mo:$('#mo').value.trim(),pl:$('#pl').value.trim(),pg:S.pg};
+ const placa=c.pl.replace(/\W/g,'');
+ const m=c.nm.replace(/\s+/g,'').length<2?'Informe seu nome.':!/^[A-Za-zÀ-ÖØ-öø-ÿ'’ -]+$/.test(c.nm)?'Use somente letras no nome.':placa.length&&placa.length<7?'Informe a placa do veículo.':!S.pg?'Escolha a forma de pagamento. O pagamento é feito presencialmente.':!$('#ciente').checked?'Confirme que você está ciente do endereço para finalizar.':'';
+ $('#er').textContent=m;
+ if(!m)S.c=c;
+ return!m;
+}
+function next(){
+ if(S.step===0&&!S.v){$('#er').textContent='Escolha o tipo de veículo.';return}
+ if(S.step===0&&S.lv<0){$('#er').textContent='Escolha o serviço.';return}
+ if(S.step===1&&S.d===agoraSP().d&&agoraSP().min>=ULT_INI){S.d='';cal();$('#er').textContent='Hoje não há mais horários. Escolha outra data.';return}
+ if(S.step===1){
+  if(!S.d){$('#er').textContent='Escolha uma data.';return}
+  {const [yy,mo2,dd]=S.d.split('-').map(Number);if(new Date(yy,mo2-1,dd).getDay()===0){S.d='';cal();$('#er').textContent='Aos domingos não há atendimento. Escolha outra data.';return}}
+  if(!S.h){$('#er').textContent='Escolha um horário.';return}
+  if(!S.mOk){$('#er').textContent='Escolha os minutos.';return}
+  const [hh,mm]=S.h.split(':').map(Number),min=hh*60+mm,a=agoraSP();
+  if(min<ABRE||min>ULT_INI){$('#er').textContent='Escolha um horário de atendimento, das 07:00 às 18:00, de segunda a sábado.';return}
+  if(S.d===a.d&&min<=a.min){$('#er').textContent='Esse horário já passou. Escolha outro.';return}
+ }
+ if(S.step===2){if(dados())enviar();return}
+ go(S.step+1);hpush();$('.panel').scrollIntoView({behavior:AB(),block:'start'});
+}
+function enviar(){
+ const done=()=>{ZI.chave='ok';ZI.quieto=true;setTimeout(()=>{ZI.quieto=false},1500);const ac=$('.acao');if(ac)ac.classList.add('final');zinhoDiz(resumoZinho(),'Agendamento pronto! Agora toque no botão azul Enviar pelo WhatsApp. Vai abrir uma conversa com a mensagem já escrita. É só enviar, e a equipe confirma o seu horário. Se precisar mudar algo, toque em Voltar e editar.',['#okwa']);$('#fm').hidden=true;$('#stp').hidden=true;$('#ok').hidden=false;$('#okt').textContent=API?'Agendamento realizado!':'Quase pronto!';$('#oklead').textContent=API?'Sua solicitação foi enviada com sucesso. Nossa equipe entrará em contato para confirmar o horário.':'A mensagem já traz todos os detalhes e o endereço. Envie pelo WhatsApp para a equipe confirmar o horário.';$('#okwa').href=waUrl();$('#osum').innerHTML=rows()+`<li><span>Total</span><b>${BRL(tot())}</b></li><li><span>Pagamento</span><b>${esc(S.c.pg)} (presencial)</b></li><li><span>Cliente</span><b>${esc(S.c.nm)}</b></li><li><span>Placa</span><b>${esc(S.c.pl.toUpperCase()||'—')}</b></li><li><span>Local</span><b>${esc(ADDR)}</b></li>`;$('#ok').scrollIntoView({behavior:AB(),block:'start'})};
+ if(!API)return done();
+ const nx=$('#nx');nx.disabled=true;
+ fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({servico:P[S.v].lav[S.lv][0],veiculo:S.v,extras:S.ex.map(i=>P[S.v].ex[i][0]),data:S.d,horario:S.h,total:tot(),nome:S.c.nm,modelo:S.c.mo,placa:S.c.pl.toUpperCase(),pagamento:S.c.pg,pagamentoLocal:'presencial'})})
+ .then(r=>{if(!r.ok)throw 0;done()})
+ .catch(()=>{$('#er').textContent='Não foi possível enviar agora. Tente novamente em instantes.'})
+ .finally(()=>nx.disabled=false);
+}
+
+function tab(){
+ const col=v=>{const c=v==='carro';return `<div class="tcol"><div class="tfoto"><img src="${FS[v]}" alt="${c?'Carro recebendo lavagem com espuma':'Moto recebendo lavagem detalhada'}" loading="lazy"><div class="tt"><span class="eb">Tabela de valores</span><h3>${c?'Carro':'Moto'}</h3></div></div><div class="tb"><p class="dv">Toque no <b style="color:var(--cy)">(!)</b> de cada serviço para ver o que está incluso.</p><ul>${P[v].lav.map((x,i)=>`<li><details><summary><span>${x[0]}</span><b>${BRL(x[1])}</b></summary><small>${DESC[v].lav[i]}</small></details></li>`).join('')}</ul><h4>SERVIÇOS EXTRAS</h4><ul>${P[v].ex.map((x,i)=>`<li><details><summary><span>${x[0]}</span><b>${BRL(x[1])}</b></summary><small>${DESC[v].ex[i]}</small></details></li>`).join('')}</ul><button type="button" class="btn p wa" data-agv="${v}">Agendar ${c?'carro':'moto'} <svg class="i"><use href="#i-arr"/></svg></button></div></div>`};
+ $('#tabela').innerHTML=col('carro')+col('moto');
+}
+gal('todos');
+$$('#gf button').forEach(b=>b.onclick=()=>{$$('#gf button').forEach(x=>x.setAttribute('aria-pressed',x===b));gal(b.dataset.f)});
+document.addEventListener('input',e=>{const t=e.target;if(t.type==='range'){const ba=t.closest('.ba');ba.dataset.t=1;ba.style.setProperty('--p',t.value+'%')};if(t.id==='pl')t.value=t.value.toUpperCase()});
+
+$('#vt').onclick=e=>{const b=e.target.closest('button');if(!b)return;S.v=b.dataset.v;S.lv=-1;S.ex=[];INFO.clear();s1();};
+$('#lvc').onclick=e=>{const f=e.target.closest('.inf');if(f){info(f.dataset.i);return}const b=e.target.closest('.chip');if(!b)return;S.lv=+b.dataset.l;$('#er').textContent='';s1();};
+$('#ex').onclick=e=>{const f=e.target.closest('.inf');if(f){info(f.dataset.i);return}const b=e.target.closest('.chip');if(!b)return;const i=+b.dataset.e,k=S.ex.indexOf(i);k<0?S.ex.push(i):S.ex.splice(k,1);s1();};
+$('#cal').onclick=e=>{const b=e.target.closest('button');if(!b||b.disabled)return;
+ if(b.dataset.m){const n=new Date(mes.getFullYear(),mes.getMonth()+ +b.dataset.m,1),min=new Date(hoje.getFullYear(),hoje.getMonth(),1);mes=n<min?min:n;cal()}
+ else{S.d=b.dataset.d;cal();hora();}};
+$('#nx').onclick=()=>next();
+$('#pgt').onclick=e=>{const b=e.target.closest('button');if(!b)return;S.pg=b.dataset.p;$$('#pgt button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('#er').textContent='';dica()};
+$('#nm').addEventListener('input',()=>dica());$('#ciente').addEventListener('change',()=>dica());$('#pl').addEventListener('input',()=>dica());
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('#fm input')){e.preventDefault();next()}});
+$('#bk').onclick=()=>{if(S.step<1)return;const c=hst();if(c&&c.d>1&&c.st===S.step){hback();return}go(S.step-1);hrep();$('.panel').scrollIntoView({behavior:AB(),block:'start'})};
+$('#volt').onclick=()=>{$('#ok').hidden=true;$('#fm').hidden=false;$('#stp').hidden=false;go(2);$('.panel').scrollIntoView({behavior:AB(),block:'start'})};
+$('#home').onclick=()=>{ZI.quieto=true;setTimeout(()=>{ZI.quieto=false},1500);Object.assign(S,{v:'',lv:-1,ex:[],d:'',h:'',mOk:false,c:{},pg:''});$$('#pgt button').forEach(x=>x.setAttribute('aria-pressed','false'));INFO.clear();$$('#fm input').forEach(i=>i.value='');$('#ciente').checked=false;$('#ok').hidden=true;$('#fm').hidden=false;$('#stp').hidden=false;mes=new Date(hoje.getFullYear(),hoje.getMonth(),1);s1();cal();hora();go(0);hrep();$('#agendar').scrollIntoView({behavior:AB(),block:'start'})};
+
+// Escolher Carro ou Moto no site abre a tela de agendamento já com o veículo marcado
+document.addEventListener('click',e=>{
+ const bt=e.target.closest('[data-agv]');if(!bt)return;
+ const v=bt.dataset.agv;
+ if(!$('#ok').hidden)$('#home').onclick();
+ if(S.v!==v){S.v=v;S.lv=-1;S.ex=[];INFO.clear();s1();go(0)}
+ abrirAgenda(true);dica();
+});
+const mo=$('#mais');
+$('#mb').onclick=()=>{const o=mo.hidden;mo.hidden=!o;$('#mb').setAttribute('aria-expanded',String(o))};
+mo.onclick=e=>{if(e.target.closest('a')){mo.hidden=true;$('#mb').setAttribute('aria-expanded','false')}};
+document.addEventListener('click',e=>{if(!mo.hidden&&!e.target.closest('#mais,#mb')){mo.hidden=true;$('#mb').setAttribute('aria-expanded','false')}});
+$('#bg').onclick=()=>{AN=!AN;try{localStorage.setItem('stetica-anim-v3',AN?'1':'0')}catch(e){}paint()};
+// Só mede a barra de baixo. A altura do topo vem do CSS (svh), então não muda quando a barra de endereço do navegador some e aparece ao rolar
+function alturaTopo(){const tb=$('.tabs'),th=tb&&getComputedStyle(tb).display!=='none'?tb.offsetHeight:0;document.documentElement.style.setProperty('--tabs-h',th+'px')}
+let larguraAnt=innerWidth;addEventListener('resize',()=>{if(innerWidth!==larguraAnt){larguraAnt=innerWidth;alturaTopo()}});alturaTopo();
+const hd=$('#hd'),sc=()=>hd.classList.toggle('s',scrollY>20);
+addEventListener('scroll',sc,{passive:true});sc();
+
+const sp=agoraSP();
+const dsem=(([y,m,d])=>new Date(y,m-1,d).getDay())(sp.d.split('-').map(Number));
+$('#stt').textContent=dsem===0?'Fechado hoje (domingo)':sp.min>=ABRE&&sp.min<FECHA?'Aberto agora':'Fora do horário de atendimento agora';
+$('#mp').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(ADDR);
+$('#endm').href=$('#mp').href;
+$('#mf').src='https://www.google.com/maps?q='+encodeURIComponent(ADDR)+'&z=16&output=embed';
+$('#yr').textContent=new Date().getFullYear();
+let fxStart=()=>{},revealSync=()=>{};
+(()=>{const c=document.createElement('canvas');c.id='fx';c.setAttribute('aria-hidden','true');document.body.prepend(c);
+const x=c.getContext('2d');let W,H,last=0;const P=[],L=[];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<18;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:1+Math.random()*1.6,v:.15+Math.random()*.35,a:.3+Math.random()*.5});
+for(let i=0;i<3;i++)L.push({x:Math.random()*W,y:Math.random()*H,l:200+Math.random()*200,v:.6+Math.random()*.5});
+let fxOn=false;function f(t){if(!AN||document.hidden){fxOn=false;return}requestAnimationFrame(f);if(t-last<60)return;last=t;x.clearRect(0,0,W,H);
+L.forEach(s=>{x.save();x.translate(s.x,s.y);x.rotate(-.38);const q=x.createLinearGradient(0,0,s.l,0);q.addColorStop(0,'rgba(0,217,255,0)');q.addColorStop(.5,'rgba(0,217,255,.28)');q.addColorStop(1,'rgba(0,217,255,0)');x.fillStyle=q;x.fillRect(0,0,s.l,1.5);x.restore();s.x+=s.v;s.y-=s.v*.38;if(s.x>W+s.l){s.x=-s.l;s.y=Math.random()*H+100}});
+P.forEach(d=>{x.fillStyle='rgba(120,200,255,'+d.a+')';x.fillRect(d.x,d.y,d.r,d.r);d.y-=d.v;if(d.y<-5){d.y=H+5;d.x=Math.random()*W}});}
+fxStart=()=>{if(!fxOn&&AN){fxOn=true;requestAnimationFrame(f)}};
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)fxStart()});
+})();
+// Protege o Zinho: um erro nele não pode travar o agendamento
+dica=zseg(dica);zinhoDiz=zseg(zinhoDiz);posicionarZinho=zseg(posicionarZinho);mostrar=zseg(mostrar);
+destacar=zseg(destacar);setTeclado=zseg(setTeclado);mostrarCampo=zseg(mostrarCampo);
+s1();cal();hora();go(0);tab();paint();
+if(location.hash==='#agendar')abrirAgenda(false);
+document.getElementById('crw').addEventListener('click',function(){var n=['55','18','98823','4267'].join('');window.open('https://wa.me/'+n+'?text='+encodeURIComponent('Olá! Vi o site da STETICA 018 e quero um site para o meu negócio.'),'_blank','noopener')});
+(function(){
+// Aparecer ao rolar. Ligado por padrão; o botão do topo liga/desliga.
+// Só em textos e cartões leves (não no formulário nem no mapa) e sem efeito duplicado em elementos aninhados.
+if(!('IntersectionObserver' in window))return;
+const sel='section:not(.hero) .eb,section:not(.hero) h2,section:not(.hero) .lead,.grid .card,.tcol,.note,.seg,.ben li,details,.ci li,.cb p,.cb .btn,.ft>*,.cr';
+const all=$$(sel);
+const els=all.filter(el=>!all.some(o=>o!==el&&o.contains(el))&&!el.closest('.panel,.map,#gal'));
+const tm=new Map();
+function show(el){
+ if(!el.classList.contains('rv'))return;
+ el.classList.add('rv-in');clearTimeout(tm.get(el));
+ tm.set(el,setTimeout(()=>{el.classList.remove('rv','rv-in');el.style.removeProperty('--d')},800));
+}
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;ro.unobserve(e.target);show(e.target)}),{threshold:0,rootMargin:'0px 0px 6% 0px'});
+function arm(todos){
+ els.forEach(el=>{
+  if(el.classList.contains('rv'))return;
+  if(!todos&&el.getBoundingClientRect().top<innerHeight*1.06)return;
+  el.style.setProperty('--d',Math.min([...el.parentElement.children].indexOf(el),3)*.06+'s');
+  el.classList.add('rv');ro.observe(el);
+ });
+}
+function disarm(){els.forEach(el=>{ro.unobserve(el);clearTimeout(tm.get(el));el.classList.remove('rv','rv-in');el.style.removeProperty('--d')})}
+let first=true;
+revealSync=()=>{if(AN)arm(first);else disarm();first=false};
+revealSync();
+// Segurança: se rolar rápido e pular algo, ou chegar ao fim, nada fica escondido
+let tk=0;
+function varre(){
+ tk=0;if(!AN)return;
+ const fim=innerHeight+scrollY>=document.documentElement.scrollHeight-4;
+ els.forEach(el=>{
+  if(!el.classList.contains('rv')||el.classList.contains('rv-in'))return;
+  if(fim||el.getBoundingClientRect().bottom<0){ro.unobserve(el);show(el)}
+ });
+}
+addEventListener('scroll',()=>{if(!tk)tk=requestAnimationFrame(varre)},{passive:true});
+// Links do menu: a seção de destino já chega com o conteúdo visível
+document.addEventListener('click',e=>{
+ const a=e.target.closest('a[href^="#"]');if(!a||!AN)return;
+ const t=document.querySelector(a.getAttribute('href'));if(!t)return;
+ const lim=t.getBoundingClientRect().top+innerHeight;
+ els.forEach(el=>{if(el.classList.contains('rv')&&!el.classList.contains('rv-in')&&el.getBoundingClientRect().top<lim){ro.unobserve(el);show(el)}});
+});
+})();
+})();
+</script>
+</body>
+</html>
