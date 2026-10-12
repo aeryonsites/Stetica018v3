@@ -832,6 +832,10 @@ html:not(.ag-on) .acao,.acao.final{display:none}
 .endc>label.ckb{margin-top:12px!important;padding:14px!important}
 .endmap{height:96px}
 .endc{padding:14px}
+/* Hero um pouco mais alto: a imagem de fundo desce mais */
+@media(max-width:999px){.hero{min-height:calc(100vh - var(--tabs-h,72px) + 90px);min-height:calc(100svh - var(--tabs-h,72px) + 90px)}}
+@media(min-width:1000px){.hero{padding-bottom:220px}}
+@media(min-width:1100px){.hero{padding-bottom:126px}}
 /* Tela final: aviso de "falta enviar" e botões de envio sempre visíveis */
 .okc.pend{border-color:#FFA726;color:#FFA726;box-shadow:0 0 30px #FFA72655}
 .okav{margin:16px 0 0;padding:14px 16px;border:1px solid #7A5416;border-radius:14px;background:#FFA72618;text-align:left;font-size:.92rem;line-height:1.5;color:#F3DDB4}
