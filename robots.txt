@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://orbytsites.github.io/Stetica018v3/sitemap.xml
