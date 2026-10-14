@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="Tabela de valores: lavagens e extras para carro">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B2A4E"/><stop offset=".55" stop-color="#07101D"/><stop offset="1" stop-color="#05070B"/></linearGradient>
+<radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#087BFF" stop-opacity=".45"/><stop offset="1" stop-color="#087BFF" stop-opacity="0"/></radialGradient>
+<linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00D9FF" stop-opacity="0"/><stop offset=".5" stop-color="#00D9FF"/><stop offset="1" stop-color="#00D9FF" stop-opacity="0"/></linearGradient>
+<linearGradient id="tx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#A9C4E6"/></linearGradient>
+</defs>
+<rect width="1600" height="400" fill="url(#bg)"/>
+<ellipse cx="800" cy="200" rx="620" ry="190" fill="url(#gl)"/>
+<g stroke="#00D9FF" stroke-opacity=".10" stroke-width="2">
+<path d="M-40 420 L360 -20"/><path d="M80 440 L480 0"/><path d="M1120 420 L1520 -20"/><path d="M1240 440 L1640 0"/>
+</g>
+<g stroke="#087BFF" stroke-opacity=".22" stroke-width="3">
+<path d="M0 330 H260"/><path d="M0 346 H150"/><path d="M1340 70 H1600"/><path d="M1450 54 H1600"/>
+</g>
+<rect x="500" y="92" width="600" height="3" fill="url(#ln)"/>
+<rect x="500" y="318" width="600" height="3" fill="url(#ln)"/>
+<g transform="translate(528,116) scale(1.5)" fill="none" stroke="#00D9FF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l2-6h12l2 6v4H4z"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/></g>
+<text x="582" y="146" font-family="'Barlow Semi Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="7" fill="#00D9FF">STETICA 018  ·  CARRO</text>
+<text x="800" y="248" text-anchor="middle" font-family="'Barlow Semi Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="104" fill="url(#tx)" textLength="880" lengthAdjust="spacingAndGlyphs">TABELA DE VALORES</text>
+<text x="800" y="298" text-anchor="middle" font-family="'Barlow Semi Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="30" letter-spacing="3" fill="#B5C0D0">Lavagens e extras para carro</text>
+</svg>
